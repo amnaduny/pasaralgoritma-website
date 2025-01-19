@@ -11,24 +11,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Exo&display=swap" rel="stylesheet"> 
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 </head>
 <body>
-    <section class="navbar-section">
+    <section class="navbar-section w-100">
         <nav class="navbar ms-sm-5 me-sm-5 navbar-expand-md responsive-text">
-            <div class="container-fluid">
+            <div class="container p-2">
                 <a class="navbar-brand" href="#">
                     <img src="assets/navbar/logo-pasaralgoritma.webp">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item me-3">
                             <a class="nav-link" href="#">Home</a>
@@ -65,13 +71,13 @@
     
                     <!-- Button in Navbar Collapse -->
                     <div class="d-flex d-md-none justify-content-center mt-3 mb-2">
-                        <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="btn btn-custom" target="_blank">Hubungi Admin</a>
+                        <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="btn btn-primary" target="_blank">Daftar</a>
                     </div>
                 </div>
                 <!-- Button in Navbar -->
-                <div class="d-flex mx-5 d-none d-md-flex">
-                    <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="btn btn-custom d-lg-block mx-auto" target="_blank">
-                        Hubungi Admin 1
+                <div class="d-flex mx-3 d-none d-md-flex">
+                    <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="btn btn-primary d-lg-block mx-auto" target="_blank">
+                        Daftar
                     </a>
                 </div>
             </div>
@@ -80,14 +86,723 @@
     
     <section class="hero-section">
         <div class="container">
-            <div class="hero-content col-lg-6 responsive-text" data-aos="zoom-in"></div>
+            <div class="row m-2 m-md-5">
+                <div class="col-lg-5">
+                    <div class="hero-content col-md-12 responsive-text text-center text-md-start" data-aos="zoom-in">
+                        <h1>
+                            Where 
+                            <u>
+                                Algorithms
+                            </u> 
+                                Meet 
+                            <u>
+                                Opportunity
+                            </u>
+                        </h1>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+                            quae ab illo inventore veritatis et quasi architecto beatae vitae 
+                            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
+                            eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 col-12 my-2">
+                                <div class="d-flex mx-2 d-md-flex">
+                                    <a href=# class="btn btn-primary d-lg-block mx-auto w-100">
+                                        Tanya dulu
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 my-2">
+                                <div class="d-flex mx-2 d-md-flex">
+                                    <a href=# class="btn btn-primary d-lg-block mx-auto w-100">
+                                        Cek Program
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-lg-block d-flex mt-2 mt-lg-0">
+                    <div class="image-container" href="" type="button" class="w-100" data-bs-toggle="modal" data-bs-target="#play-company-profile">
+                    </div>
+                    
+                    <div class="modal fade" id="play-company-profile" tabindex="-1" aria-labelledby="play-company-profileLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <iframe id="company-profile" width="650px" 
+                                    height="450px" 
+                                    src="https://www.youtube.com/embed/UCLv1ua859Y"
+                                    frameborder="0" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
 
+    <section class="why-us-section p-4 responsive-text">
+        <div class="container text-center">
+            <div class="title my-4" data-aos="zoom-in">
+                <h2>Mengapa Memilih Pasar Algoritma?</h2>
+                <p>Pasar Algoritma memiliki mentor yang sudah <br>menempuh dunia 
+                    pendidikan tinggi dan bekerja di perusahaan internasional.
+                </p>
+            </div>
+            <hr class="w-50 mx-auto" style="border: none; height: 1px; background-color: #ccc;">
+            <div class="why-us-content">
+                <div class="row my-3 text-center justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card h-100 p-3">
+                            <div class="image-wrapper">
+                                <img src="assets/icons/book.ico" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">
+                                    Kurikulum Relevan
+                                </h4>
+                                <p>
+                                    Pelajari teknologi terbaru dengan kurikulum 
+                                    terkini dari para ahli.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 p-3">
+                            <div class="image-wrapper">
+                                <img src="assets/icons/monitor.ico" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">
+                                    Praktik Intensif
+                                </h4>
+                                <p>
+                                    Kuasai coding cepat dengan konsep dan praktik 
+                                    lewat proyek nyata.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 p-3">
+                            <div class="image-wrapper">
+                                <img src="assets/icons/winner-badge.ico" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">
+                                    Pengajar Profesional
+                                </h4>
+                                <p>
+                                    Belajar dari praktisi IT berpengalaman dan ahli 
+                                    yang passionate mengajar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 p-3">
+                            <div class="image-wrapper">
+                                <img src="assets/icons/chat.ico" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title">
+                                    Dukungan Penuh
+                                </h4>
+                                <p>
+                                    Kami dukung sukses Anda dengan forum, mentor, dan peluang karir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="tentang-kami-section my-5 p-4">
+        <div class="container text-center">
+            <div class="title">
+                <h2>Kelas Programming Terjangkau <br> Kualitas Internasional</h2>
+            </div>
+            <div class="body">
+                <p>
+                    Belajar programming tidak perlu mahal! Kami menyediakan kelas berkualitas 
+                    tinggi dengan mentor berpengalaman yang memiliki latar belakang 
+                    pendidikan dari universitas ternama, pengalaman bekerja di perusahaan 
+                    internasional, dan pembelajaran di luar negeri. Dapatkan ilmu dan 
+                    keterampilan terbaik dengan harga yang terjangkau untuk mendukung perjalanan 
+                    karier Anda di dunia teknologi. Mari mulai belajar sekarang!
+                </p>
+            </div>
+            <div class="d-flex mx-2 d-md-flex">
+                <a href=# class="btn btn-primary d-lg-block mx-auto">
+                    Tentang Kami
+                </a>
+            </div>
 
+        </div>
+    </section>
 
+    <section class="founder-section my-5 p-4">
+        <div class="container responsive-text">
+            <div class="row">
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="image-wrapper">
+                        <img src="https://placehold.co/100x100/png">
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-start align-items-center">
+                    <div class="company-position">
+                        <h4>Founder</h4>
+                        <div class="name">
+                            <h5>Fikrah Elhifzi</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center words my-3">
+                <h6>
+                    <strong>Fokus pada inspirasi</strong>
+                </h6>
+                <p>Kami membangun ini bukan hanya sebagai bisnis, 
+                    tapi sebagai sebuah mimpi yang ingin kami wujudkan untuk mengubah dunia."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-section">
+        <div class="container">
+            <div class="title responsive-text text-center p-5 mb-2" data-aos="zoom-in">
+                <h2>
+                    Pilihan Program Kursus
+                </h2>
+                <p>
+                    Pasar Algoritma menawarkan program-program unggulan.
+                </p>
+            </div>
+            <div class="row responsive-text">
+                <div class="col col-lg-3 col-sm-6 my-2">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/basic-python.webp">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>
+                                    Basic Python
+                                </h4>
+                                <p>
+                                    Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <ul>
+                                    <li>Pahami Konsep Dasar Pemrograman</li>
+                                    <li>Kuasai Sintaks Python</li>
+                                    <li>Bangun Program Sederhana</li>
+                                    <li>Berpikir Logis dan Terstruktur</li>
+                                </ul>
+                            </div>
+
+                            <div class="content-price">
+                                <h6>70% OFF</h6>
+                                <s><em>Rp 2.999.000</em></s>
+                                <h5>Rp 1.000.000</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn btn-primary d-lg-block mx-auto">
+                                    Daftar
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <div class="col col-lg-3 col-sm-6 my-2">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/python-for-kid.webp">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>
+                                    Python for Kids
+                                </h4>
+                                <p>
+                                    Yuk, ajak si kecil menjelajahi dunia pemrograman dengan cara yang menyenangkan!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <ul>
+                                    <li>Membuat Game Sederhana</li>
+                                    <li>Menggambar dengan Kode</li>
+                                    <li>Memecahkan Teka-teki Logika</li>
+                                    <li>Mengenal Konsep Dasar Pemrograman</li>
+                                </ul>
+                            </div>
+                            <div class="content-price">
+                                <h6>70% OFF</h6>
+                                <s><em>Rp 1.599.000</em></s>
+                                <h5>Rp 479.000</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn btn-primary d-lg-block mx-auto">
+                                    Daftar
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="col col-lg-3 col-sm-6 my-2">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/basic-web-development.webp">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>
+                                    Basic Web Development
+                                </h4>
+                                <p>
+                                    Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Membangun website sederhana</li>
+                                </ul>
+                            </div>
+                            <div class="content-price">
+                                <h6>70% OFF</h6>
+                                <s><em>Rp 3.199.000</em></s>
+                                <h5>Rp 959.000</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn btn-primary d-lg-block mx-auto">
+                                    Daftar
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+
+                <div class="col col-lg-3 col-sm-6 my-2">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/data-science.webp">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>
+                                    Data Science
+                                </h4>
+                                <p>
+                                    Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="card-text">
+                                <ul>
+                                    <li>Pemrograman Python untuk Data Science</li>
+                                    <li>Visualisasi Data</li>
+                                    <li>Machine Learning</li>
+                                    <li>Studi Kasus dan Project</li>
+                                </ul>
+                            </div>
+                            <div class="content-price">
+                                <h6>70% OFF</h6>
+                                <s><em>Rp 4.999.000</em></s>
+                                <h5>Rp 1.499.000</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn btn-primary d-lg-block mx-auto">
+                                    Daftar
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mentor-section">
+        <div class="container">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
+                <h2>
+                    Mentor: Bimbingan Expert di Setiap Langkahmu
+                </h2>
+                <p>
+                    Bingung atau stuck saat belajar coding? <br>Tenang, 
+                    kamu tidak sendirian! <br>Di program ini, kamu akan 
+                    didampingi oleh mentor berpengalaman yang siap membimbingmu.
+                </p>
+            </div>
+        </div>
+
+        <div class="container responsive-text mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fikrah Elhifzi</h5>
+                    <p class="card-text">Descriptions ...</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <img src="https://placehold.co/300x400/png" class="card-img-right">
+            </div>
+        </div>
+        <div class="container responsive-text mt-5">
+            <div class="card">
+                <img src="https://placehold.co/300x400/png" class="card-img-right">
+                <div class="card-body">
+                    <h5 class="card-title">Amnaduny Akhara</h5>
+                    <p class="card-text">Descriptions ...</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimoni-section">
+        <div class="container">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
+                <h2>
+                    Testimoni: Mereka Yang Telah Berhasil
+                </h2>
+                <p>
+                    Ragu untuk bergabung? <br>
+                    Lihat apa kata mereka yang telah merasakan manfaat program ini!
+                </p>
+            </div>
+
+            <div class="row responsive-text text-center my-2">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row responsive-text text-center my-2">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/100x100/png">
+                        </div>
+                        <div class="card-body">
+                            <h5>Nama orang</h5>
+                            <p>
+                                Testimoni
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
+                <h2>
+                    FAQ - Kursus Pemrograman Pasar Algoritma
+                </h2>
+            </div>
+            
+            <div class="accordion" id="accordionPanelsStayOpenFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseOne">
+                            Apa saja persyaratan untuk mengikuti kursus ini?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ol>
+                                <li>Tidak ada persyaratan khusus untuk mengikuti sebagian 
+                                    besar kursus kami. Selama Anda memiliki minat dalam 
+                                    pemrograman dan kemauan untuk belajar, Anda siap untuk memulai!
+                                </li>
+                                <li>
+                                    Untuk beberapa kelas tingkat lanjut, mungkin ada prasyarat khusus yang 
+                                    perlu dipenuhi. Detail prasyarat akan dicantumkan di halaman deskripsi kelas.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseTwo">
+                            Bagaimana sistem pembelajarannya?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Kursus ini 100% online, sehingga kamu bisa belajar kapanpun dan 
+                            dimanapun.  Materi pembelajaran disajikan dalam berbagai format, 
+                            seperti video, modul, dan latihan interaktif. Kamu juga akan mendapatkan 
+                            akses ke forum diskusi untuk berinteraksi dengan instruktur dan peserta lain.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseThree">
+                            Apakah saya akan mendapatkan sertifikat setelah menyelesaikan kursus?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Tentu saja!  Setelah menyelesaikan semua materi dan lulus ujian, 
+                            kamu akan mendapatkan sertifikat digital yang bisa kamu cantumkan 
+                            di CV atau profil LinkedIn.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseFour">
+                            Bagaimana cara mendaftar kursus ini?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Kamu bisa mendaftar dengan mudah melalui website kami.  Klik tombol "Daftar Sekarang" 
+                            di halaman kursus, lalu ikuti langkah-langkahnya.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseFive">
+                            Apakah ada jaminan uang kembali?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Ya, kami menawarkan jaminan uang kembali dalam bentuk mengikuti program batch 
+                            setelahnya dengan gratis jika anda tidak memahami isi dari kursus tersebut 
+                            dengan syarat dan ketentuan yang berlaku
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" 
+                        aria-controls="panelsStayOpen-collapseSix">
+                            Bagaimana jika saya memiliki pertanyaan lebih lanjut?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Jangan ragu untuk menghubungi kami melalui [email/nomor telepon/formulir kontak]. 
+                            Tim support kami siap membantu menjawab pertanyaanmu.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Dapatkan Penawaran Terbaik & Info Kursus Programming di Pasar Algoritma!</h2>
+                    <p>Tertarik untuk mendalami dunia <em>programming</em> dan menguasai algoritma?  Daftarkan email Anda sekarang juga untuk mendapatkan:</p>
+                    <ul>
+                        <li>Harga penawaran terbaik untuk program kursus pilihan Anda.</li>
+                        <li>Informasi lengkap seputar program kursus <em>programming</em> di Pasar Algoritma.</li>
+                        <li>Update terbaru tentang promo, diskon, dan event menarik lainnya.</li>
+                        <li>Konsultasi gratis dengan tim ahli kami.</li>
+                    </ul>
+                    <p>Jangan lewatkan kesempatan emas ini! </p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon (Opsional):</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Masukkan nomor telepon Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Program Kursus yang Diminati:</label>
+                            <select class="form-control" id="course">
+                                <option value="">-- Pilih Program Kursus --</option>
+                                <option value="webdev">Web Development</option>
+                                <option value="datascience">Data Science</option>
+                                <option value="mobiledev">Mobile Development</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Kuasai Dunia Digital dengan Bergabung di Pasar Algoritma!</h4>
+                    <p>
+                        Pelajari skill teknologi paling dicari di era digital ini, 
+                        mulai dari Data Science, Machine Learning,  Web Development, 
+                        dan masih banyak lagi.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Daftar Sekarang dan Mulai Belajar!</h4>
+                    <p>
+                        Pelajari skill teknologi paling dicari di era digital ini, 
+                        mulai dari Data Science, Machine Learning,  Web Development, 
+                        dan masih banyak lagi.
+                    </p>
+                    <div class="d-flex mx-5 d-none d-md-flex">
+                        <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="btn btn-primary d-lg-block mx-auto" target="_blank">
+                            Daftar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <footer class="d-flex flex-column flex-md-row flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center mb-3 mb-md-0 responsive-text">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="assets/navbar/logo-pasaralgoritma.webp" alt="Company Logo" width="48" height="auto">
+                    </a>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 d-flex justify-content-center mb-3 mb-md-0 responsive-text text-center">
+                    <p class="footer-text text-muted">© Copyright 2025, All Rights Reserved by Pasar Algoritma</p>
+                </div>
+        
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+                    <ul class="nav list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a class="text-muted" href="#" target="_blank">
+                                <img src="assets/icons/instagram.svg" alt="instagram-logo" width="24" height="24">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="#">
+                                <img src="assets/icons/tiktok.svg" alt="tiktok-logo" width="24" height="24">
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="text-muted" href="#" target="_blank">
+                                <img src="assets/icons/whatsapp.svg" alt="whatsapp-logo" width="23" height="23">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -97,5 +812,8 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Own javascript -->
+     <script src="script.js"></script>
 </body>
 </html>
