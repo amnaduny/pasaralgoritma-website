@@ -1,14 +1,17 @@
+// start of modal company profile
 // Stop playing video youtube if modal is closed
 // get the modal and iframe
-const modal = document.getElementById('play-company-profile');
-const iframe = document.getElementById('company-profile');
+// const modal = document.getElementById('play-company-profile');
+// const iframe = document.getElementById('company-profile');
 
-// add an event listener for when the modal is hidden
-modal.addEventListener('hidden.bs.modal', function () {
-    // reset the iframe src to stop the video
-    iframe.src = iframe.src;
-});
+// // add an event listener for when the modal is hidden
+// modal.addEventListener('hidden.bs.modal', function () {
+//     // reset the iframe src to stop the video
+//     iframe.src = iframe.src;
+// });
+// end of modal company profile
 
+// start of scroll navbar
 // scroll navbar change background color
 window.addEventListener('scroll', function() {
     let navbar = document.querySelector('.navbar-section'); 
@@ -31,3 +34,5 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+// end of navbar
