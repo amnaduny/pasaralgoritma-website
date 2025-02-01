@@ -359,6 +359,12 @@ body {
     border-width: 2px;
 }
 
+.tentang-kami-section .custom-button:hover {
+    border-color: #515b77;
+    background-color: #515b77;
+    transition: 0.3s ease;
+}
+
 /* Founder Section */
 .founder-section {
     border: var(--border);
