@@ -11,10 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Fonts -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Exo&display=swap" rel="stylesheet"> 
@@ -24,9 +20,9 @@
     
 </head>
 <body>
-    <section class="navbar-section w-100">
+    <section class="navbar-section w-100" id="navbar-section">
         <nav class="navbar ms-sm-5 me-sm-5 navbar-expand-md responsive-text">
-            <div class="container p-2">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/navbar/logo-pasaralgoritma.webp">
                 </a>
@@ -88,7 +84,7 @@
     <section class="hero-section">
         <div class="container">
             <div class="row m-2 m-md-5 mb-md-3">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="hero-content col-md-12 responsive-text text-center text-md-start py-5" data-aos="zoom-in">
                         <!-- <h1>
                             Where 
@@ -97,25 +93,27 @@
                             <u>Opportunity</u>
                         </h1> -->
                         <h1>
-                            Where 
-                            <span class="highlight">Algorithms</span> 
-                            Meet 
-                            <span class="highlight">Opportunity</span>
+                            Belajar 
+                            <span class="highlight">Coding</span> 
+                            Bersama 
+                            <!-- <span class="highlight">Pasar Algoritma</span> -->
+                            Pasar Algoritma
                         </h1>
                         <h3>
-                            Menguasai Keterampilan Pemrograman untuk Menciptakan Peluang Karir yang Lebih Baik
+                            Usia bukan halangan! Mulai belajar coding bersama 
+                            Pasar Algoritma dan jadi jagoan teknologi. Siap bersaing di dunia digital!
                         </h3>
                         <div class="row" data-aos="zoom-in">
-                            <div class="col-md-6 col-12 my-2">
+                            <div class="col-xl-6 col-12 my-2">
                                 <div class="d-flex mx-2 d-md-flex">
-                                    <a href=# class="custom-button d-lg-block mx-auto w-100">
+                                    <a href=# class="custom-button d-lg-block mx-auto w-75">
                                         Tanya dulu
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-2">
+                            <div class="col-xl-6 col-12 my-2">
                                 <div class="d-flex mx-2 d-md-flex">
-                                    <a href=# class="custom-button d-lg-block mx-auto w-100">
+                                    <a href=# class="custom-button d-lg-block mx-auto w-75">
                                         Cek Program
                                     </a>
                                 </div>
@@ -123,9 +121,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 d-lg-block d-flex mt-2 mt-lg-0" data-aos="zoom-in">
-                    <div class="image-wrapper w-100 d-flex justify-content-center">
-                        <img src="assets/hero-section/qr-code.gif">
+                <div class="col-lg-6 d-xl-block d-lg-flex d-none align-items-center justify-content-center" data-aos="zoom-in">
+                    <div class="image-wrapper w-100 d-flex justify-content-center align-items-center">
+                        <img src="assets/hero-section/qr-code.gif" class="img-fluid">
                     </div>
                     <!-- <div class="image-container" href="" type="button" class="w-100" data-bs-toggle="modal" data-bs-target="#play-company-profile">
                     </div> -->
@@ -143,81 +141,300 @@
                     </div> -->
                 </div>
             </div>
-            <div class="row justify-content-center" data-aos="fade-down">
+            <div class="row justify-content-center mt-0" data-aos="fade-down">
                 <div class="col-10 h-100 responsive-text">
                     <div class="carousel-container">
-                        <div class="carousel-card-wrapper">
+                        <div class="carousel-card-wrapper align-items-end">
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Mikha</h5>
-                                    <h6>Kuliah</h6>
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Mikha</h6>
+                                    <p class="fw-bold">Mahasiswa S1</p>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body mt-2">
                                     <p>
-                                        " Belajar di Pasar Algoritma memperdalam pemahaman machine learning 
-                                        dengan kurikulum fleksibel dan pengajaran terstruktur. "
+                                        "Belajar di Pasar Algoritma memperdalam pemahaman machine learning 
+                                        dengan kurikulum fleksibel dan pengajaran terstruktur."
                                     </p>
                                 </div>
                             </div>
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Jane Smith</h5>
-                                    <h6>Marketing Manager, Company</h6>
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/benedicta.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Benedicta Wahyu</h6>
+                                    <p class="fw-bold">Binus university</p>
+                                    <p class="fw-bold">Bachelor of Accounting and Finance</p>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body mt-2">
                                     <p>
-                                        " A wonderful experience, and the results exceeded my expectations. "
+                                        "Sebagai pemula, Pasar Algoritma sangat bermanfaat dan meningkatkan 
+                                        kompetensi saya berkat bimbingan mentor profesional."
                                     </p>
                                 </div>
                             </div>
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Mike Johnson</h5>
-                                    <h6>Developer, Tech Co.</h6>
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/jackson.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Jackson</h6>
+                                    <p class="fw-bold">Oil and Gas, Qatar</p>
+                                    <p class="fw-bold">Professional</p>
                                 </div>
-                                <p>
-                                    " I can't believe how amazing this service is. I will definitely use it again. "
-                                </p>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Belajar di Pasar Algoritma sangat mendukung pekerjaan saya, kurikulumnya sistematis 
+                                        dan pengajar yang berpengalaman."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/putu-narendra.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Putu Narendra</h6>
+                                    <p class="fw-bold">Binus university</p>
+                                    <p class="fw-bold">Finance</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Di sini saya belajar Machine Learning, R, dan Python dari guru 
+                                        berpengalaman, sangat ideal untuk karir data analyst atau data scientist."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/wandi.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Wandi</h6>
+                                    <p class="fw-bold">Copenhagen Business School</p>
+                                    <p class="fw-bold">Master of Data Science and Business</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Berkat Pasar Algoritma, saya yang sebelumnya kesulitan technical data science, 
+                                        kini lebih memahaminya berkat pengajar kompeten."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/kayla.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Kayla</h6>
+                                    <p class="fw-bold">University of California</p>
+                                    <p class="fw-bold">Bachelor of Data Science</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Sebagai mahasiswa data science, saya merekomendasikan Pasar Algoritma 
+                                        karena materi dan pengajarnya sangat baik."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Melza</h6>
+                                    <p class="fw-bold">
+                                        Bachelor of
+                                    </p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Bimbingan ini sangat membantu penyelesaian skripsi saya, terutama forecasting, 
+                                        berkat kakak pembimbing yang sabar, profesional, dan suportif."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/evita.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Evita</h6>
+                                    <p class="fw-bold">Unviersity of Lincoln</p>
+                                    <p class="fw-bold">Master in Data Science and Applied Analytics</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Saya sangat merekomendasikan Pasar Algoritma karena proses belajarnya 
+                                        menyenangkan, materinya mudah dipahami, dan pengajarnya profesional dan ramah."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Melisa</h6>
+                                    <p class="fw-bold">Private Healthcare Company</p>
+                                    <p class="fw-bold">Data Science</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        Kursus Python Pasar Algoritma sangat membantu proyek kantor saya. 
+                                        Materi terstruktur, relevan, dan pengajar kompeten.
+                                    </p>
+                                </div>
                             </div>
 
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Mikha</h5>
-                                    <h6>Kuliah</h6>
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Mikha</h6>
+                                    <p class="fw-bold">Mahasiswa S1</p>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body mt-2">
                                     <p>
-                                        " Belajar di Pasar Algoritma memperdalam pemahaman machine learning 
-                                        dengan kurikulum fleksibel dan pengajaran terstruktur. "
+                                        "Belajar di Pasar Algoritma memperdalam pemahaman machine learning 
+                                        dengan kurikulum fleksibel dan pengajaran terstruktur."
                                     </p>
                                 </div>
                             </div>
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Jane Smith</h5>
-                                    <h6>Marketing Manager, Company</h6>
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/benedicta.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Benedicta Wahyu</h6>
+                                    <p class="fw-bold">Binus university</p>
+                                    <p class="fw-bold">Bachelor of Accounting and Finance</p>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body mt-2">
                                     <p>
-                                        " A wonderful experience, and the results exceeded my expectations. "
+                                        "Sebagai pemula, Pasar Algoritma sangat bermanfaat dan meningkatkan 
+                                        kompetensi saya berkat bimbingan mentor profesional."
                                     </p>
                                 </div>
                             </div>
                             <div class="testimonial-card">
                                 <div class="card-title">
-                                    <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
-                                    <h5>Mike Johnson</h5>
-                                    <h6>Developer, Tech Co.</h6>
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/jackson.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Jackson</h6>
+                                    <p class="fw-bold">Oil and Gas, Qatar</p>
+                                    <p class="fw-bold">Professional</p>
                                 </div>
-                                <p>
-                                    " I can't believe how amazing this service is. I will definitely use it again. "
-                                </p>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Belajar di Pasar Algoritma sangat mendukung pekerjaan saya, kurikulumnya sistematis 
+                                        dan pengajar yang berpengalaman."
+                                    </p>
+                                </div>
                             </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/putu-narendra.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Putu Narendra</h6>
+                                    <p class="fw-bold">Binus university</p>
+                                    <p class="fw-bold">Finance</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Di sini saya belajar Machine Learning, R, dan Python dari guru 
+                                        berpengalaman, sangat ideal untuk karir data analyst atau data scientist."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/wandi.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Wandi</h6>
+                                    <p class="fw-bold">Copenhagen Business School</p>
+                                    <p class="fw-bold">Master of Data Science and Business</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Berkat Pasar Algoritma, saya yang sebelumnya kesulitan technical data science, 
+                                        kini lebih memahaminya berkat pengajar kompeten."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/kayla.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Kayla</h6>
+                                    <p class="fw-bold">University of California</p>
+                                    <p class="fw-bold">Bachelor of Data Science</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Sebagai mahasiswa data science, saya merekomendasikan Pasar Algoritma 
+                                        karena materi dan pengajarnya sangat baik."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Melza</h6>
+                                    <p class="fw-bold">
+                                        Bachelor of
+                                    </p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Bimbingan ini sangat membantu penyelesaian skripsi saya, terutama forecasting, 
+                                        berkat kakak pembimbing yang sabar, profesional, dan suportif."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="assets/testimoni-section/evita.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Evita</h6>
+                                    <p class="fw-bold">Unviersity of Lincoln</p>
+                                    <p class="fw-bold">Master in Data Science and Applied Analytics</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        "Saya sangat merekomendasikan Pasar Algoritma karena proses belajarnya 
+                                        menyenangkan, materinya mudah dipahami, dan pengajarnya profesional dan ramah."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="card-title">
+                                    <div class="image-wrapper">
+                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                    </div>
+                                    <h6>Melisa</h6>
+                                    <p class="fw-bold">Private Healthcare Company</p>
+                                    <p class="fw-bold">Data Science</p>
+                                </div>
+                                <div class="card-body mt-2">
+                                    <p>
+                                        Kursus Python Pasar Algoritma sangat membantu proyek kantor saya. 
+                                        Materi terstruktur, relevan, dan pengajar kompeten.
+                                    </p>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -229,73 +446,106 @@
         <div class="container text-center">
             <div class="title my-4" data-aos="zoom-in">
                 <h2>Mengapa Memilih Pasar Algoritma?</h2>
-                <p>Pasar Algoritma memiliki mentor yang sudah <br>menempuh dunia 
+                <!-- <p>Pasar Algoritma memiliki mentor yang sudah <br>menempuh dunia 
                     pendidikan tinggi dan bekerja di perusahaan internasional.
-                </p>
+                </p> -->
             </div>
             <hr class="w-50 mx-auto">
             <div class="why-us-content">
                 <div class="row my-3 text-center justify-content-center">
                     <div class="col-md-3">
-                        <div class="card h-100 p-3" data-aos="zoom-in">
+                        <div class="card p-2" data-aos="zoom-in">
                             <div class="image-wrapper">
-                                <img src="assets/why-us-section/book.gif" alt="">
+                                <img src="assets/why-us-section/book.gif" alt="Adaptif Kurikulum">
                             </div>
-                            <div class="card-body d-flex align-items-center justify-content-center text-center">
-                                <h5 class="card-title">
-                                    Kurikulum Relevan
-                                </h5>
-                                <!-- <p>
-                                    Pelajari teknologi terbaru dengan kurikulum 
-                                    terkini dari para ahli.
-                                </p> -->
+                            <h5 class="card-title">
+                                Adaptif Kurikulum
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Kurikulum menyesuaikan kebutuhan teknologi yang sedang 
+                                    berkembang.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card h-100 p-3" data-aos="zoom-in">
+                        <div class="card p-2" data-aos="zoom-in">
                             <div class="image-wrapper">
-                                <img src="assets/why-us-section/monitor.gif" alt="">
+                                <img src="assets/why-us-section/monitor.gif" alt="Praktik Intensif">
                             </div>
-                            <div class="card-body d-flex align-items-center justify-content-center text-center">
-                                <h5 class="card-title">
-                                    Praktik Intensif
-                                </h5>
-                                <!-- <p>
-                                    Kuasai coding cepat dengan konsep dan praktik 
-                                    lewat proyek nyata.
-                                </p> -->
+                            <h5 class="card-title">
+                                Praktik Intensif
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Pembelajaran pemrograman dirancang mengikuti perkembangan 
+                                    zaman.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card h-100 p-3" data-aos="zoom-in">
+                        <div class="card p-2" data-aos="zoom-in">
                             <div class="image-wrapper">
-                                <img src="assets/why-us-section/medal.gif" alt="">
+                                <img src="assets/why-us-section/medal.gif" alt="Pengajar Profesional">
                             </div>
-                            <div class="card-body d-flex align-items-center justify-content-center text-center">
-                                <h5 class="card-title">
-                                    Pengajar Profesional
-                                </h5>
-                                <!-- <p>
-                                    Belajar dari praktisi IT berpengalaman dan ahli 
-                                    yang passionate mengajar.
-                                </p> -->
+                            <h5 class="card-title">
+                                Pengajar Profesional
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Pengajar dengan kandidat PhD di IT atau bekerja 
+                                    di Perusahaan Internasional di bidang IT.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 text-center justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card p-2" data-aos="zoom-in">
+                            <div class="image-wrapper">
+                                <img src="assets/why-us-section/it-dev.gif" alt="Programming, not AI">
+                            </div>
+                            <h5 class="card-title">
+                                Not AI tools
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Lebih banyak belajar pemrograman lebih dalam dan
+                                    kreatif daripada hanya menggunakan AI tools.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="card h-100 p-3" data-aos="zoom-in">
+                        <div class="card p-2" data-aos="zoom-in">
                             <div class="image-wrapper">
-                                <img src="assets/why-us-section/engagement.gif" alt="">
+                                <img src="assets/why-us-section/engagement.gif" alt="Dukungan Penuh">
                             </div>
-                            <div class="card-body d-flex align-items-center justify-content-center text-center">
-                                <h5 class="card-title">
-                                    Dukungan Penuh
-                                </h5>
-                                <!-- <p>
-                                    Kami dukung sukses Anda dengan forum, mentor, dan peluang karir.
-                                </p> -->
+                            <h5 class="card-title">
+                                Dukungan Penuh
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Setiap minggu selalu ada meeting tambahan jika ada pertanyaan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2" data-aos="zoom-in">
+                            <div class="image-wrapper">
+                                <img src="assets/why-us-section/guarantee.gif" alt="Garansi">
+                            </div>
+                            <h5 class="card-title">
+                                Garansi
+                            </h5>
+                            <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
+                                <p>
+                                    Belajar coding sampai bisa tanpa biaya tambahan.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -304,36 +554,10 @@
         </div>
     </section>
 
-    <section class="tentang-kami-section my-5 p-4">
-        <div class="container text-center responsive-text">
-            <div class="title" data-aos="zoom-in">
-                <h2>Kelas Programming Terjangkau <br> Kualitas Internasional</h2>
-            </div>
-            <div class="body" data-aos="zoom-in">
-                <p>
-                    Belajar programming tidak perlu mahal! Kami menyediakan kelas berkualitas 
-                    tinggi dengan mentor berpengalaman yang memiliki latar belakang 
-                    pendidikan dari universitas ternama, pengalaman bekerja di perusahaan 
-                    internasional, dan pembelajaran di luar negeri. Dapatkan ilmu dan 
-                    keterampilan terbaik dengan harga yang terjangkau untuk mendukung perjalanan 
-                    karier Anda di dunia teknologi. Mari mulai belajar sekarang!
-                </p>
-            </div>
-            <div class="d-flex m-2 d-md-flex" data-aos="zoom-in">
-                <a href=# class="custom-button d-lg-block mx-auto">
-                    Tentang Kami
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="founder-section my-5 p-4">
+    <!-- <section class="founder-section my-5 p-4">
         <div class="container responsive-text">
-            <!-- Carousel Wrapper -->
             <div id="founderCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <!-- Slide 1: First Person -->
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-6 d-flex justify-content-end">
@@ -361,7 +585,6 @@
                         </div>
                     </div>
     
-                    <!-- Slide 2: Second Person -->
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-6 d-flex justify-content-end">
@@ -390,7 +613,6 @@
                     </div>
                 </div>
     
-                <!-- Carousel Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#founderCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -401,8 +623,253 @@
                 </button>
             </div>
         </div>
+    </section> -->
+
+    <section class="tentang-kami-section p-4">
+        <div class="container text-center responsive-text">
+            <div class="title" data-aos="zoom-in">
+                <h2>Kelas Programming Terjangkau <br> Kualitas Internasional</h2>
+            </div>
+            <div class="body" data-aos="zoom-in">
+                <p>
+                    Belajar programming tidak perlu mahal! Kami menyediakan kelas berkualitas 
+                    tinggi dengan mentor berpengalaman yang memiliki latar belakang 
+                    pendidikan dari universitas ternama, pengalaman bekerja di perusahaan 
+                    internasional, dan pembelajaran di luar negeri. Dapatkan ilmu dan 
+                    keterampilan terbaik dengan harga yang terjangkau untuk mendukung perjalanan 
+                    karier Anda di dunia teknologi. Mari mulai belajar sekarang!
+                </p>
+            </div>
+            <div class="d-flex m-2 d-md-flex" data-aos="zoom-in">
+                <a href=# class="custom-button d-lg-block mx-auto">
+                    Tentang Kami
+                </a>
+            </div>
+
+        </div>
     </section>
-    
+
+    <section class="mentor-section">
+        <div class="container">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
+                <h2>
+                    Mentor: Bimbingan Expert di Setiap Langkahmu
+                </h2>
+                <p>
+                    Bingung atau stuck saat belajar coding? <br>Tenang, 
+                    kamu tidak sendirian! <br>Di program ini, kamu akan 
+                    didampingi oleh mentor berpengalaman yang siap membimbingmu.
+                </p>
+            </div>
+        </div>
+        <!-- Carousel Wrapper -->
+        <div id="mentorCarousel" class="carousel slide responsive-text" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: Three People -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="https://placehold.co/300x200/png" alt="Fikrah Elhifzi">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Fikrah Elhifzi</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Assistant Manager di GenPact</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Data Science</span>
+                                            <span class="highlight">Python</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" class="linkedin-logo" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Amnaduny Akhara</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Software Developer di Rockwell Automation</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Web Development</span>
+                                            <span class="highlight">HTML</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="" alt="Amnaduny Akhara">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Milzam Wafi Azhar</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Researcher Machine Learning, LLM, Artificial Inteligence</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Python</span>
+                                            <span class="highlight">Machine Learning</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Three More People -->
+                <div class="carousel-item">
+                    <div class="row text-center">
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="https://placehold.co/300x200/png" alt="Fikrah Elhifzi">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Fikrah Elhifzi</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Assistant Manager di GenPact</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Data Science</span>
+                                            <span class="highlight">Python</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" class="linkedin-logo" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Amnaduny Akhara</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Software Developer di Rockwell Automation</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Web Development</span>
+                                            <span class="highlight">HTML</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="zoom-in">
+                            <div class="card p-3">
+                                <div class="image-wrapper">
+                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
+                                </div>
+                                
+                                <div class="card-title mt-3">
+                                    <h4>Milzam Wafi Azhar</h4>
+                                </div>
+                                <div class="card-body text-start p-0">
+                                    <ul>
+                                        <li>Mahasiswa S3 Computer Science</li>
+                                        <li>Researcher Machine Learning, LLM, Artificial Inteligence</li>
+                                    </ul>
+                                </div>
+                                <div class="skill row">
+                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
+                                        <p class="text-start my-2 justify-content-between">
+                                            <span class="highlight">Python</span>
+                                            <span class="highlight">Machine Learning</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
+                                        <a href="#" target="_blank">
+                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mentorCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mentorCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
     <section class="program-section pb-5">
         <div class="container">
             <div class="title responsive-text text-center p-5 mb-2" data-aos="zoom-in">
@@ -422,7 +889,7 @@
                         <div class="card-body">
                             <div class="card-title d-flex align-items-center justify-content-center">
                                 <h4>
-                                    Basic Python
+                                    Python Fundamental
                                 </h4>
                             </div>
                             <div class="descriptions m-2">
@@ -449,7 +916,7 @@
                             </div>
                             <hr>
                             <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
+                                <a href="basic-fundamental.html" class="custom-button d-lg-block mx-auto">
                                     Lebih Lanjut
                                 </a>
                             </div>
@@ -585,42 +1052,6 @@
         </div>
     </section>
 
-    <section class="mentor-section">
-        <div class="container">
-            <div class="title responsive-text text-center" data-aos="zoom-in">
-                <h2>
-                    Mentor: Bimbingan Expert di Setiap Langkahmu
-                </h2>
-                <p>
-                    Bingung atau stuck saat belajar coding? <br>Tenang, 
-                    kamu tidak sendirian! <br>Di program ini, kamu akan 
-                    didampingi oleh mentor berpengalaman yang siap membimbingmu.
-                </p>
-            </div>
-        </div>
-
-        <div class="container responsive-text mt-3">
-            <div class="r-card card" data-aos="fade-right">
-                <div class="card-body">
-                    <h5 class="card-title">Fikrah Elhifzi</h5>
-                    <p class="card-text">Descriptions ...</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-                <img src="https://placehold.co/200x300/png" class="card-img-right">
-            </div>
-        </div>
-        <div class="container responsive-text mt-3">
-            <div class="l-card card" data-aos="fade-left">
-                <img src="https://placehold.co/200x300/png" class="card-img-left">
-                <div class="card-body">
-                    <h5 class="card-title">Amnaduny Akhara</h5>
-                    <p class="card-text">Descriptions ...</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="testimoni-section">
         <div class="container">
             <div class="title responsive-text text-center" data-aos="zoom-in">
@@ -633,85 +1064,113 @@
                 </p>
             </div>
 
-            <div class="row responsive-text text-center m-3">
+            <div class="row responsive-text m-3">
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-right">
+                    <div class="card video-card" data-video="assets\testimoni-section\benedicta.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/benedicta.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Benedicta Wahyu</h5>
                             <p>
-                                Testimoni
+                                Binus University
+                            </p>
+                            <p>
+                                Bachelor Degree Accounting and Finance
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" data-aos="zoom-in">
+                    <div class="card video-card" data-video="assets\testimoni-section\putu.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/putu-narendra.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Putu Narendra</h5>
                             <p>
-                                Testimoni
+                                Binus University
                             </p>
+                            <p>Finance</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-left">
+                    <div class="card video-card" data-video="assets\testimoni-section\jackson.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/jackson.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Jackson</h5>
                             <p>
-                                Testimoni
+                                Oil and Gas in Qatar
+                            </p>
+                            <p>
+                                Professional
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row responsive-text text-center m-3">
+            <div class="row responsive-text m-3">
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-right">
+                    <div class="card video-card" data-video="assets\testimoni-section\Wandi.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/wandi.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Wandi</h5>
                             <p>
-                                Testimoni
+                                Master in Data Science and Business administation
+                            </p>
+                            <p>
+                                Copenhagen Business School
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" data-aos="zoom-in">
+                    <div class="card video-card" data-video="assets\testimoni-section\Kayla.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/kayla.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Kayla</h5>
                             <p>
-                                Testimoni
+                                University of California
+                            </p>
+                            <p>
+                                Bachelor of Data Science
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" data-aos="fade-left">
+                    <div class="card video-card" data-video="assets\testimoni-section\Evita.mp4">
                         <div class="image-wrapper">
-                            <img src="https://placehold.co/100x100/png">
+                            <img src="assets/testimoni-section/evita.jpg">
                         </div>
                         <div class="card-body">
-                            <h5>Nama orang</h5>
+                            <h5>Evita</h5>
                             <p>
-                                Testimoni
+                                Universty of Lincoln
                             </p>
+                            <p>
+                                Master in Data Science and Applied Analytics
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-1">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -727,26 +1186,20 @@
                 </h2>
             </div>
             
-            <div class="accordion w-75 mx-auto responsive-text" id="accordionPanelsStayOpenFAQ">
+            <div class="accordion accordion-flush w-75 mx-auto responsive-text" id="accordionFlushFAQ">
                 <div class="accordion-item" data-aos="fade-left">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseOne">
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" 
+                        aria-controls="flush-collapseOne">
                             <strong>Apa saja persyaratan untuk mengikuti kursus ini?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
                             <ol>
-                                <li>Tidak ada persyaratan khusus untuk mengikuti sebagian 
-                                    besar kursus kami. Selama Anda memiliki minat dalam 
-                                    pemrograman dan kemauan untuk belajar, Anda siap untuk memulai!
-                                </li>
-                                <li>
-                                    Untuk beberapa kelas tingkat lanjut, mungkin ada prasyarat khusus yang 
-                                    perlu dipenuhi. Detail prasyarat akan dicantumkan di halaman deskripsi kelas.
-                                </li>
+                                <li>Tidak ada persyaratan khusus untuk mengikuti sebagian besar kursus kami. Selama Anda memiliki minat dalam pemrograman dan kemauan untuk belajar, Anda siap untuk memulai!</li>
+                                <li>Untuk beberapa kelas tingkat lanjut, mungkin ada prasyarat khusus yang perlu dipenuhi. Detail prasyarat akan dicantumkan di halaman deskripsi kelas.</li>
                             </ol>
                         </div>
                     </div>
@@ -754,83 +1207,75 @@
                 <div class="accordion-item" data-aos="fade-right">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseTwo">
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" 
+                        aria-controls="flush-collapseTwo">
                             <strong>Bagaimana sistem pembelajarannya?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
-                            Kursus ini 100% online, sehingga kamu bisa belajar kapanpun dan 
-                            dimanapun.  Materi pembelajaran disajikan dalam berbagai format, 
-                            seperti video, modul, dan latihan interaktif. Kamu juga akan mendapatkan 
-                            akses ke forum diskusi untuk berinteraksi dengan instruktur dan peserta lain.
+                            Kursus ini 100% online, sehingga kamu bisa belajar kapanpun dan dimanapun. Materi pembelajaran disajikan dalam berbagai format, seperti video, modul, dan latihan interaktif. Kamu juga akan mendapatkan akses ke forum diskusi untuk berinteraksi dengan instruktur dan peserta lain.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" data-aos="fade-left">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseThree">
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" 
+                        aria-controls="flush-collapseThree">
                             <strong>Apakah saya akan mendapatkan sertifikat setelah menyelesaikan kursus?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
-                            Tentu saja!  Setelah menyelesaikan semua materi dan lulus ujian, 
-                            kamu akan mendapatkan sertifikat digital yang bisa kamu cantumkan 
-                            di CV atau profil LinkedIn.
+                            Tentu saja! Setelah menyelesaikan semua materi dan lulus ujian, kamu akan mendapatkan sertifikat digital yang bisa kamu cantumkan di CV atau profil LinkedIn.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" data-aos="fade-right">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseFour">
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" 
+                        aria-controls="flush-collapseFour">
                             <strong>Bagaimana cara mendaftar kursus ini?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
-                            Kamu bisa mendaftar dengan mudah melalui website kami.  Klik tombol "Daftar Sekarang" 
-                            di halaman kursus, lalu ikuti langkah-langkahnya.
+                            Kamu bisa mendaftar dengan mudah melalui website kami. Klik tombol "Daftar Sekarang" di halaman kursus, lalu ikuti langkah-langkahnya.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" data-aos="fade-left">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseFive">
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" 
+                        aria-controls="flush-collapseFive">
                             <strong>Apakah ada jaminan uang kembali?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
-                            Ya, kami menawarkan jaminan uang kembali dalam bentuk mengikuti program batch 
-                            setelahnya dengan gratis jika anda tidak memahami isi dari kursus tersebut 
-                            dengan syarat dan ketentuan yang berlaku
+                            Ya, kami menawarkan jaminan uang kembali dalam bentuk mengikuti program batch setelahnya dengan gratis jika Anda tidak memahami isi dari kursus tersebut dengan syarat dan ketentuan yang berlaku.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item" data-aos="fade-right">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" 
-                        aria-controls="panelsStayOpen-collapseSix">
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" 
+                        aria-controls="flush-collapseSix">
                             <strong>Bagaimana jika saya memiliki pertanyaan lebih lanjut?</strong>
                         </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFAQ">
                         <div class="accordion-body">
-                            Jangan ragu untuk menghubungi kami melalui [email/nomor telepon/formulir kontak]. 
-                            Tim support kami siap membantu menjawab pertanyaanmu.
+                            Jangan ragu untuk menghubungi kami melalui [email/nomor telepon/formulir kontak]. Tim support kami siap membantu menjawab pertanyaanmu.
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -846,7 +1291,7 @@
                         <li>Update terbaru tentang promo</li>
                         <li>Konsultasi gratis dengan tim ahli kami.</li>
                     </ul> -->
-                    <div class="row m-5">
+                    <div class="row mt-5">
                         <div class="col-3 d-flex flex-column text-center align-items-center justify-content-center" data-aos="fade-right">
                             <div class="image-wrapper">
                                 <img src="assets/subscribe-section/wallet.svg" alt="harga penawaran terbaik">

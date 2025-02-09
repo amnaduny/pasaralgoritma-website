@@ -36,3 +36,39 @@ window.addEventListener('scroll', function() {
 });
 
 // end of navbar
+
+// load navbar to new page
+function loadNavbar() {
+    fetch('index.html')
+        .then(response => response.text())
+        .then(data => {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = data;
+            const navbar = tempDiv.querySelector('#navbar-section');
+            
+            if (navbar && !document.querySelector('#navbar-section')) { 
+                document.body.insertAdjacentHTML('afterbegin', navbar.outerHTML);
+            }
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+}
+
+window.addEventListener('load', loadNavbar);
+// end of load navbar to new page
+
+// video modal testimoni
+document.querySelectorAll(".video-card").forEach(card => {
+    card.addEventListener("click", function() {
+        let videoUrl = this.getAttribute("data-video");
+        let videoFrame = document.getElementById("videoFrame");
+        videoFrame.src = videoUrl + "?autoplay=1"; // Add autoplay
+
+        let videoModal = new bootstrap.Modal(document.getElementById("videoModal"));
+        videoModal.show();
+    });
+});
+
+document.getElementById("videoModal").addEventListener("hidden.bs.modal", function () {
+    document.getElementById("videoFrame").src = ""; // Stop video when modal closes
+});
+// end of video modal testimoni
