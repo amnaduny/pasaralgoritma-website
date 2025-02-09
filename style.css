@@ -65,14 +65,14 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 110px;
 }
 
 body {
-    background-color: #fff;
-    background-image: url(assets/bg/topographic-bg.svg);
+    background-color: #FFFFFF;
+    /* background-image: url(assets/bg/topographic-bg.svg);
     background-position: 50%;
-    background-size: 50%;
+    background-size: 50%; */
 }
 
 .custom-button {
@@ -158,8 +158,16 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.navbar-section .navbar .navbar-brand {
+    background-color: var(--background);
+    border-radius: 50%;
+    padding: 0.1rem;
+}
+
 .navbar-section .navbar .navbar-brand img {
-    height: 54px;
+    height: 64px;
+    border: var(--border);
+    border-radius: 50%;
 }
 
 .navbar-section .navbar li {
@@ -172,12 +180,16 @@ body {
 }
 
 .navbar-section .navbar-nav .nav-link:hover {
-    color: var(--primary);
+    color: var(--text-black);
     transition: color 0.3s ease;
 }
 
 .navbar-section.scrolled .navbar-nav .nav-link {
     color: var(--text-black);
+}
+
+.navbar-section.scrolled .navbar-nav .nav-link:hover {
+    color: var(--primary);
 }
 
 /* Hero Section */  
@@ -193,7 +205,9 @@ body {
     height: 980px;
     /* box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); */
 
-    background-image: url(assets/hero-section/hero-bg.svg);
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, white 100%), 
+    url(assets/hero-section/hero-bg.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -648,14 +662,14 @@ body {
     border-radius: 0.5rem;
     background-color: var(--background);
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0;
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
 .subscribe-section .left-column {
     padding: 2rem;
     background-color: var(--secondary);
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0 0 0 0.5rem;
 }
 
 .subscribe-section .left-column h2,
@@ -681,7 +695,7 @@ body {
 }
 .subscribe-section .right-column {
     background-color: var(--background);
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 0 0.5rem 0;
     border: var(--border);
 }
 
@@ -691,7 +705,7 @@ body {
     margin-right: 2rem;
     margin-top: 8rem;
     margin-bottom: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     /* border: var(--border); */
     background-color: var(--secondary);
     padding: 1rem;
@@ -724,6 +738,41 @@ body {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Navbar Section */
+    .navbar-section .container {
+        border-radius: 1rem;
+        background-color: var(--background);
+    }
+
+    .navbar-section.scrolled .container {
+        border-radius: 1rem;
+    }
+
+    .navbar-section .navbar-collapse {
+        margin-top: 1rem;
+    }
+
+    .navbar-section .navbar-nav .nav-link {
+        color: var(--text-black);
+    }
+
+    .navbar-section .navbar-nav .nav-link:hover {
+        color: var(--primary);
+    }
+
+    .navbar-section .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Hero Section */
 
 }
 
