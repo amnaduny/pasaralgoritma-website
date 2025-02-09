@@ -613,6 +613,10 @@ body {
 .testimoni-section .card .card-body {
     background-color: var(--secondary);
     border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.testimoni-section .card .card-body h5,
+.testimoni-section .card .card-body p {
     color: var(--text-white);
 }
 
@@ -652,6 +656,11 @@ body {
     padding: 2rem;
     background-color: var(--secondary);
     border-radius: 1rem 0 0 1rem;
+}
+
+.subscribe-section .left-column h2,
+.subscribe-section .left-column h6,
+.subscribe-section .left-column p {
     color: var(--text-white);
 }
 
