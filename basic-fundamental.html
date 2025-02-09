@@ -39,10 +39,10 @@
             <div class="course-content responsive-text">
                 <div class="row">
                     <div class="col-8">
-                        <h2 class="mt-5">
+                        <h2 class="mt-5" data-aos="zoom-in">
                             Fundamental Python
                         </h2>
-                        <div class="meta-course d-flex align-items-center text-muted mt-2 responsive-text">
+                        <div class="meta-course d-flex align-items-center text-muted mt-2 responsive-text" data-aos="zoom-in">
                             <img src="assets/program-section/fundamental-python/clock.svg" alt="Pertemuan" width="20" class="me-1">
                             <p class="me-4">
                                 12 Minggu
@@ -60,21 +60,21 @@
                                 12 Tugas
                             </p>
                         </div>
-                        <div class="course-tab mt-5">
+                        <div class="course-tab mt-5 mb-5" data-aos="fade-up">
                             <ul class="nav nav-tabs nav-fill">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1">Ringkasan</a>
+                                    <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#ringkasan">Ringkasan</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2">Kurikulum</a>
+                                    <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#kurikulum">Kurikulum</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#content3">Mentor</a>
+                                    <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#mentor">Mentor</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="content1">
-                                    <h4 class="mt-4">
+                                <div class="tab-pane p-4 fade show active" id="ringkasan">
+                                    <h4 class="pt-4">
                                         Apa itu Fundamental Python?
                                     </h4>
                                     <p class="mt-4">
@@ -119,17 +119,306 @@
                                     </p>
                                     
                                 </div>
-                                <div class="tab-pane fade" id="content2">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor urna at cursus suscipit.</p>
+                                <div class="tab-pane p-4 fade" id="kurikulum">
+                                    <p class="pt-4">
+                                        Modul ini akan memberikan pemahaman mendalam mengenai dasar-dasar fundamental dalam bahasa pemrograman, 
+                                        membantu Anda membangun fondasi yang kuat untuk pengembangan keterampilan coding.
+                                    </p>
+                                    <div class="accordion mt-4 responsive-text" id="learningAccordion">
+                                        <!-- Pertemuan 1 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <h5>
+                                                        Pertemuan 1 - Introduction to Programming
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    <p>
+                                                        Memahami konsep dasar pemrograman dan logika algoritma.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pertemuan 2 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    <h5>
+                                                        Pertemuan 2 - Python Variable, Data Types, and User Input
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menggunakan variabel, memahami tipe data Python, dan menerima input dari pengguna.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pertemuan 3 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5>
+                                                        Pertemuan 3 - Python Conditional Statements
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menerapkan pernyataan kondisional (if, else, elif) untuk membuat keputusan dalam program.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pertemuan 4 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <h5>
+                                                        Pertemuan 4 - Python Looping Statements
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menggunakan perulangan (for, while) untuk menjalankan kode secara berulang.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 5 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    <h5>
+                                                        Pertemuan 5 - Python Collection Data Types
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menggunakan tipe data koleksi (list, tuple, set, dictionary) untuk menyimpan dan memanipulasi data.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 6 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingSix">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                    <h5>
+                                                        Pertemuan 6 - Python Functions
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Membuat dan menggunakan fungsi untuk menyederhanakan kode dan meningkatkan keterbacaan.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 7 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingSeven">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                    <h5>
+                                                        Pertemuan 7 - Introduction to SQL
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Memahami dasar-dasar SQL untuk mengelola dan mengambil data dari database.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 8 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingEight">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                    <h5>
+                                                        Pertemuan 8 - SQL in Python
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menggunakan SQL dalam Python untuk bekerja dengan basis data dan melakukan query.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 9 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingNine">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                                    <h5>
+                                                        Pertemuan 9 - Introduction to Power BI
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Memahami dasar penggunaan Power BI untuk visualisasi dan laporan data.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 10 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingTen">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                                    <h5>
+                                                        Pertemuan 10 - Simple Data Transformation & Cleaning
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Melakukan transformasi dan pembersihan data dasar untuk analisis yang lebih lanjut.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 11 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingEleven">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                                    <h5>
+                                                        Pertemuan 11 - Data Visualization & Reporting
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Membuat visualisasi data yang efektif dan menyusun laporan untuk pengambilan keputusan.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <!-- Pertemuan 12 -->
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingTwelve">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                                    <h5>
+                                                        Pertemuan 12 - Capstone Project and Portfolio Building
+                                                    </h5>
+                                                </button>
+                                            </div>
+                                            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#learningAccordion">
+                                                <div class="accordion-body">
+                                                    Menyelesaikan proyek akhir dan membangun portofolio untuk mendukung karir di bidang data.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="content3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci at orci eleifend iaculis.</p>
+                                <div class="tab-pane p-4 fade" id="mentor">
+                                    <div class="card">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-2">
+                                                <img src="https://placehold.co/125x125/png" class="card-img" alt="mentor elhifzi">
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        Fikrah Elhifzi
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        Mahasiswa S3 di Poland, Bekerja di perusahaan luar negeri
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-2">
+                                                <img src="https://placehold.co/125x125/png" class="card-img" alt="mentor elhifzi">
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">
+                                                        Amnaduny Akhara
+                                                    </h5>
+                                                    <p class="card-text">
+                                                        Mahasiswa S3 di Poland, Bekerja di perusahaan luar negeri
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        
+                    <div class="col-4 responsive-text class-features">
+                        <div class="card mt-5 gold-card" data-aos="zoom-in">
+                            <div class="image-wrapper d-flex justify-content-center">
+                                <img src="assets/program-section/fundamental-python/gold.svg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-center">
+                                    <h4>
+                                        Gold
+                                    </h4>
+                                </div>
+                                <div class="m-2">
+                                    <ul class="gold-star-list">
+                                        <li>Semua paket basic di dapatkan</li>
+                                        <li>Meeting dalam group kecil sekali setiap minggu</li>
+                                        <li>Konsultasi karir</li>
+                                        <li>Free 2 meeting di program yang lain jika tersedia</li>
+                                        <li>Garansi kelas yang sama jika masih belum paham</li>
+                                        <li>Promo for next programme</li>
+                                    </ul>
+                                </div>
+                                <div class="justify-content-center">
+                                    <s><em>Rp 2.999.000</em></s>
+                                    <h5>Rp 1.000.000</h5>
+                                </div>
+                                <hr>
+                                <div class="d-flex mx-2">
+                                    <a href="basic-fundamental.html" class="custom-button d-lg-block mx-auto">
+                                        Daftar
+                                    </a>
+                                </div>
+                            </div>                
+                        </div>
+                        <div class="card mt-5 basic-card" data-aos="zoom-in">
+                            <div class="image-wrapper d-flex justify-content-center">
+                                <img src="assets/program-section/fundamental-python/basic.svg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-center justify-content-center">
+                                    <h4>
+                                        Basic
+                                    </h4>
+                                </div>
+                                <div class="m-2">
+                                    <ul class="basic-star-list">
+                                        <li>Satu tambahan meeting setiap minggu secara bersama-sama</li>
+                                        <li>Akses dan modul materi yang lengkap</li>
+                                        <li>Ujian dan Sertifikat</li>
+                                        <li>Personal project</li>
+                                    </ul>
+                                </div>
+                                <div class="justify-content-center">
+                                    <s><em>Rp 2.999.000</em></s>
+                                    <h5>Rp 1.000.000</h5>
+                                </div>
+                                <hr>
+                                <div class="d-flex mx-2">
+                                    <a href="basic-fundamental.html" class="custom-button d-lg-block mx-auto">
+                                        Daftar
+                                    </a>
+                                </div>
+                            </div>                
+                        </div>
                     </div>
                     
                 </div>

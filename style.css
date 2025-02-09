@@ -112,7 +112,7 @@ body {
 .responsive-text h6 {
     font-family: var(--font-style--poppins);
     font-weight: var(--bold);
-    color: var(--text);
+    color: var(--text-black);
 }
 
 .responsive-text p,
@@ -120,7 +120,7 @@ body {
 .responsive-text label,
 .responsive-text input {
     font-family: var(--font-style-opensans);
-    color: var(--text);
+    color: var(--text-black);
     margin: 0;
 }
 
