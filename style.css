@@ -270,8 +270,8 @@ body {
     display: flex;
     animation: runCard 25s linear infinite;
     /* animation: linear 15s infinite alternate runCard; */
-    width: 450%;
-    height: 270px;
+    width: 400%;
+    height: 300px;
     gap: 1rem;
 }
 
@@ -286,7 +286,7 @@ body {
 
 .hero-section .testimonial-card {
     width: 300px;
-    height: 230px;
+    height: 250px;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -331,7 +331,7 @@ body {
 .why-us-section {
     margin-right: 4rem;
     margin-left: 4rem;
-    margin-top: -4rem;
+    margin-top: 10rem;
     z-index: 2;
     background-color: var(--background);
     border-radius: 0.5rem;
@@ -662,7 +662,7 @@ body {
     border-radius: 0.5rem;
     background-color: var(--background);
     padding-top: 5rem;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -734,7 +734,77 @@ body {
 }
 
 @media (max-width: 575.98px) {
+    /* Navbar Section */
+    .navbar-section .container {
+        border-radius: 1rem;
+        background-color: var(--background);
+    }
 
+    .navbar-section.scrolled .container {
+        border-radius: 1rem;
+    }
+
+    .navbar-section .navbar-collapse {
+        margin-top: 1rem;
+    }
+
+    .navbar-section .navbar-nav .nav-link {
+        color: var(--text-black);
+    }
+
+    .navbar-section .navbar-nav .nav-link:hover {
+        color: var(--primary);
+    }
+
+    .navbar-section .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        height: 980px;
+    }
+
+    .hero-section .carousel-card-wrapper {
+        width: 1300%;
+        height: 310px;
+    }
+
+    .hero-section .testimonial-card {
+        height: 270px;
+    }
+
+    .hero-section .hero-content h1 {
+        line-height: 2.35rem;
+    }
+
+    .hero-section .hero-content h3 {
+        line-height: 1.55rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+    }
+
+    /* Why Us Section */
+    .why-us-section {
+        margin: 0;
+    }
+
+    .why-us-section .why-us-content img {
+        max-width: 60%;
+    }
+
+    /* Tentang Kami */
+    .tentang-kami-section {
+        margin: 1rem 0;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -773,13 +843,76 @@ body {
     }
 
     /* Hero Section */
+    .hero-section .carousel-card-wrapper {
+        width: 800%;
+        height: 320px;
+    }
 
+    .hero-section .testimonial-card {
+        height: 280px;
+    }
+
+    /* Why Us Section */
+    .why-us-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .why-us-section .why-us-content img {
+        max-width: 80%;
+    }
+
+    /* Tentang Kami */
+    .tentang-kami-section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Hero Section */
+    .hero-section .carousel-card-wrapper {
+        width: 600%;
+        height: 350px;
+    }
 
+    .hero-section .testimonial-card {
+        height: 350px;
+    }
+
+    /* Why Us Section */
+    .why-us-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+    }
+
+    .why-us-section .why-us-content img {
+        max-width: 80%;
+    }
+
+    /* Tentang Kami */
+    .tentang-kami-section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Hero Section */
+    .hero-section .carousel-card-wrapper {
+        width: 500%;
+        gap: 0.5rem;
+    }
+
+    /* Why Us Section */
+    .why-us-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 8rem;
+    }
 
 }
