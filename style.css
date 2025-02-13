@@ -134,6 +134,7 @@ body {
     z-index: 100;
     transition: background-color 0.3s ease;
     padding-top: 3rem;
+    max-width: 100vw;
 }
 
 .navbar-section.scrolled {
@@ -735,6 +736,11 @@ body {
 
 @media (max-width: 575.98px) {
     /* Navbar Section */
+    .navbar-section {
+        max-width: 100vw;
+        padding-top: 1rem;
+    }
+
     .navbar-section .container {
         border-radius: 1rem;
         background-color: var(--background);
