@@ -85,3 +85,55 @@ document.getElementById("videoModal").addEventListener("hidden.bs.modal", functi
     document.getElementById("videoFrame").src = ""; // Stop video when modal closes
 });
 // end of video modal testimoni
+
+// Validate data input form
+// document.querySelector("form").addEventListener("submit", function(event) {
+//     event.preventDefault(); // Prevent form submission
+
+//     let name = document.getElementById("name").value.trim();
+//     let email = document.getElementById("email").value.trim();
+//     let phone = document.getElementById("phone").value.trim();
+//     let course = document.getElementById("course").value;
+
+//     let namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+//     let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+//     let phonePattern = /^[0-9]*$/; // Only numbers
+
+//     if (!namePattern.test(name)) {
+//         alert("Nama tidak boleh mengandung angka atau karakter khusus!");
+//         return;
+//     }
+
+//     if (!emailPattern.test(email)) {
+//         alert("Masukkan alamat email yang valid!");
+//         return;
+//     }
+
+//     if (phone !== "" && !phonePattern.test(phone)) {
+//         alert("Nomor telepon hanya boleh berisi angka!");
+//         return;
+//     }
+
+//     if (course === "") {
+//         alert("Silakan pilih program kursus!");
+//         return;
+//     }
+
+//     // Create a JSON object with the form data
+//     let formData = {
+//         name: name,
+//         email: email,
+//         phone: phone,
+//         course: course
+//     };
+
+//     // Log the JSON object to the console (you can replace this with saving to a server or local storage)
+//     console.log("Form Data in JSON format: ", JSON.stringify(formData));
+
+//     // Optionally, save the data in Local Storage (if you don't want to lose it after refresh)
+//     localStorage.setItem("formData", JSON.stringify(formData));
+
+//     alert("Formulir berhasil dikirim!");
+//     this.submit(); // Submit the form if all validations pass
+// });
+// End of validate data input form
