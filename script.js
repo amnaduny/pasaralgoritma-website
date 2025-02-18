@@ -14,15 +14,21 @@
 // start of scroll navbar
 // scroll navbar change background color
 window.addEventListener('scroll', function() {
-    let navbar = document.querySelector('.navbar-section'); 
-    
-    // Langsung cek apakah ada scroll 
-    if (window.scrollY > 0) { 
+    let navbar = document.querySelector('.navbar-section');
+    let navbarLinks = document.querySelector('.navbar');
+    let navbarBrand = document.querySelector('.navbar-brand');
+
+    if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
+        navbarLinks.classList.add('scrolled');
+        navbarBrand.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
+        navbarLinks.classList.remove('scrolled');
+        navbarBrand.classList.remove('scrolled');
     }
 });
+
 
 // scroll navbar text change color
 window.addEventListener('scroll', function() {
@@ -34,8 +40,15 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
-
 // end of navbar
+
+// Remove show when clicking nav-item
+document.querySelectorAll('.nav-link').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.navbar-collapse').classList.remove('show');
+    });
+});
+// End of remove show
 
 // load navbar to new page
 function loadNavbar() {

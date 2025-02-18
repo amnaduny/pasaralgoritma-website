@@ -21,11 +21,14 @@
 </head>
 <body>
     <section class="navbar-section w-100" id="navbar-section">
-        <nav class="navbar ms-sm-5 me-sm-5 ms-2 me-2 navbar-expand-md responsive-text">
+        <nav class="navbar ms-sm-5 me-sm-5 ms-2 me-2 navbar-expand-lg responsive-text">
             <div class="container">
                 <a class="navbar-brand" href="/#hero-section">
-                    <img src="assets/navbar/logo.png">
+                    <img src="assets/pasar-algoritma-logo.png">
                 </a>
+                <!-- <div class="d-none d-lg-flex text-start">
+                    <h6 class="text-logo m-0">PASAR ALGORITMA</h6>
+                </div> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -40,23 +43,28 @@
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="/#program-section">Program</a>
-                        </li>
-                        <li class="nav-item me-3">
                             <a class="nav-link" href="/#mentor-section">Mentor</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="/#tentang-kami-section">About</a>
+                            <a class="nav-link" href="/#program-section">Program</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="/#testimoni-section">Testimoni</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: gray;">
+                                About
+                            </a>
                         </li>
                     </ul>
     
                     <!-- Button in Navbar Collapse -->
-                    <div class="d-flex d-md-none justify-content-center mt-3 mb-2">
+                    <div class="d-flex d-lg-none justify-content-center mt-3 mb-2">
                         <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="custom-button" target="_blank">Daftar</a>
                     </div>
                 </div>
                 <!-- Button in Navbar -->
-                <div class="d-flex mx-3 d-none d-md-flex">
+                <div class="d-flex mx-3 d-none d-lg-flex">
                     <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" class="custom-button d-lg-block mx-auto" target="_blank">
                         Daftar
                     </a>
@@ -98,8 +106,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-xl-block d-lg-flex d-none align-items-center justify-content-center" data-aos="zoom-in">
-                    <div class="image-wrapper w-100 d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center" data-aos="zoom-in">
+                    <div class="hero-image-wrapper d-flex justify-content-center align-items-center">
                         <img src="assets/hero-section/hero-img.png" class="img-fluid">
                     </div>
                 </div>
@@ -588,12 +596,12 @@
         </div>
     </section> -->
 
-    <section class="tentang-kami-section p-3 p-sm-4" id="tentang-kami-section">
+    <section class="tentang-kami-section p-3 p-sm-4 d-none" id="tentang-kami-section">
         <div class="container text-center responsive-text">
             <div class="title" data-aos="zoom-in">
                 <h2>Kelas Programming Terjangkau <br> Kualitas Internasional</h2>
             </div>
-            <div class="body" data-aos="zoom-in">
+            <div class="body d-none d-md-block" data-aos="zoom-in">
                 <p>
                     Belajar programming tidak perlu mahal! Kami menyediakan kelas berkualitas 
                     tinggi dengan mentor berpengalaman yang memiliki latar belakang 
@@ -603,7 +611,7 @@
                     karier Anda di dunia teknologi. Mari mulai belajar sekarang!
                 </p>
             </div>
-            <div class="d-flex m-2 d-md-flex" data-aos="zoom-in">
+            <div class="d-flex m-2 d-md-flex mt-4" data-aos="zoom-in">
                 <a href=# class="custom-button d-lg-block mx-auto">
                     Tentang Kami
                 </a>
@@ -626,195 +634,114 @@
             </div>
         </div>
         <!-- Carousel Wrapper -->
-        <div id="mentorCarousel" class="carousel slide responsive-text" data-bs-ride="carousel">
+        <div id="mentorCarouselXL" class="carousel slide responsive-text d-none d-lg-block" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!-- Slide 1: Three People -->
                 <div class="carousel-item active">
-                    <div class="row text-center">
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="https://placehold.co/300x200/png" alt="Fikrah Elhifzi">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Fikrah Elhifzi</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Assistant Manager di GenPact</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Data Science</span>
-                                            <span class="highlight">Python</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" class="linkedin-logo" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fikrah Elhifzi</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 Computer Science</li>
+                                    <li>Assistant Manager  GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                    <a href="#" target="_blank"></a>
+                                        <img src="assets/icons/linkedin.svg" alt="linkedin-logo" width="24" height="24">
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Amnaduny Akhara</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Software Developer di Rockwell Automation</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Web Development</span>
-                                            <span class="highlight">HTML</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amnaduny Akhara</h5>
+                                <ul>
+                                    <li>Mahasiswa </li>
+                                    <li>Assistant Manager di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="" alt="Amnaduny Akhara">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Milzam Wafi Azhar</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Researcher Machine Learning, LLM, Artificial Inteligence</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Python</span>
-                                            <span class="highlight">Machine Learning</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Milzam Wafi Azhar</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 </li>
+                                    <li>Assistant  di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Slide 2: Three More People -->
+
+                <!-- Slide 2: Three People -->
                 <div class="carousel-item">
-                    <div class="row text-center">
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="https://placehold.co/300x200/png" alt="Fikrah Elhifzi">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Fikrah Elhifzi</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Assistant Manager di GenPact</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Data Science</span>
-                                            <span class="highlight">Python</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" class="linkedin-logo" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fikrah Elhifzi</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 Computer Science</li>
+                                    <li>Assistant Manager  GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Amnaduny Akhara</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Software Developer di Rockwell Automation</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Web Development</span>
-                                            <span class="highlight">HTML</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amnaduny Akhara</h5>
+                                <ul>
+                                    <li>Mahasiswa </li>
+                                    <li>Assistant Manager di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4" data-aos="zoom-in">
-                            <div class="card p-3">
-                                <div class="image-wrapper">
-                                    <img src="https://placehold.co/300x200/png" alt="Amnaduny Akhara">
-                                </div>
-                                
-                                <div class="card-title mt-3">
-                                    <h4>Milzam Wafi Azhar</h4>
-                                </div>
-                                <div class="card-body text-start p-0">
-                                    <ul>
-                                        <li>Mahasiswa S3 Computer Science</li>
-                                        <li>Researcher Machine Learning, LLM, Artificial Inteligence</li>
-                                    </ul>
-                                </div>
-                                <div class="skill row">
-                                    <div class="col-8 d-flex justify-content-start align-items-center ps-4">
-                                        <p class="text-start my-2 justify-content-between">
-                                            <span class="highlight">Python</span>
-                                            <span class="highlight">Machine Learning</span>
-                                        </p>
-                                    </div>
-                                    <div class="col-4 d-flex justify-content-end align-items-center pe-4">
-                                        <a href="#" target="_blank">
-                                            <img src="assets/icons/linkedin.svg" alt="linkedin-fikrah-elhifzi">
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Milzam Wafi Azhar</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 </li>
+                                    <li>Assistant  di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -822,11 +749,155 @@
             </div>
 
             <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#mentorCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#mentorCarouselXL" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mentorCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#mentorCarouselXL" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="mentorCarouselMD" class="carousel slide responsive-text d-none d-md-block d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: Two People -->
+                <div class="carousel-item active">
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fikrah Elhifzi</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 Computer Science</li>
+                                    <li>Assistant Manager  GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amnaduny Akhara</h5>
+                                <ul>
+                                    <li>Mahasiswa </li>
+                                    <li>Assistant Manager di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Two People -->
+                <div class="carousel-item">
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fikrah Elhifzi</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 Computer Science</li>
+                                    <li>Assistant Manager  GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amnaduny Akhara</h5>
+                                <ul>
+                                    <li>Mahasiswa </li>
+                                    <li>Assistant Manager di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mentorCarouselMD" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mentorCarouselMD" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="mentorCarouselMobile" class="carousel slide responsive-text d-block d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: One Person -->
+                <div class="carousel-item active">
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fikrah Elhifzi</h5>
+                                <ul>
+                                    <li>Mahasiswa S3 Computer Science</li>
+                                    <li>Assistant Manager  GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 1: One Person -->
+                <div class="carousel-item">
+                    <div class="card-group gap-3">
+                        <div class="card">
+                            <img src="https://placehold.co/300x200/png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Amnaduny Akhara</h5>
+                                <ul>
+                                    <li>Mahasiswa </li>
+                                    <li>Assistant Manager di GenPact</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-start my-2 justify-content-between">
+                                    <span class="highlight">Data Science</span>
+                                    <span class="highlight">Python</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mentorCarouselMobile" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mentorCarouselMobile" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -844,17 +915,17 @@
                 </p>
             </div>
             <div class="row responsive-text text-center">
-                <div class="col col-lg-3 col-sm-6 my-2">
+                <div class="col-12 col-lg-3 col-md-6 my-2">
                     <div class="card h-100" data-aos="zoom-in">
                         <div class="image-wrapper">
-                            <img src="assets/program-section/basic-python.webp">
+                            <img src="assets/program-section/python-fundamental.png">
                         </div>
-                        <div class="card-body">
-                            <div class="card-title d-flex align-items-center justify-content-center">
-                                <h4>
-                                    Python Fundamental
-                                </h4>
-                            </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Python Fundamental
+                            </h4>
+                        </div>
+                        <div class="card-body py-0 px-1">
                             <div class="descriptions m-2">
                                 <p>
                                     Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
@@ -863,40 +934,32 @@
                                     *16x pertemuan (2 bulan)
                                 </p>
                             </div>
-                            <!-- <div class="list-desc card-text text-start">
-                                <ul>
-                                    <li>Pahami Konsep Dasar Pemrograman</li>
-                                    <li>Kuasai Sintaks Python</li>
-                                    <li>Bangun Program Sederhana</li>
-                                    <li>Berpikir Logis dan Terstruktur</li>
-                                </ul>
-                            </div> -->
-
                             <div class="content-price">
                                 <!-- <h6>70% OFF</h6> -->
                                 <s><em>Rp 2.999.000</em></s>
                                 <h5>Rp 1.000.000</h5>
                             </div>
-                            <hr>
+                        </div>
+                        <div class="card-footer">
                             <div class="d-flex mx-2">
                                 <a href="basic-fundamental.html" class="custom-button d-lg-block mx-auto">
                                     Lebih Lanjut
                                 </a>
                             </div>
-                        </div>                
+                        </div>
                     </div>
                 </div>
-                <div class="col col-lg-3 col-sm-6 my-2">
+                <div class="col-12 col-lg-3 col-md-6 my-2">
                     <div class="card h-100" data-aos="zoom-in">
                         <div class="image-wrapper">
-                            <img src="assets/program-section/python-for-kid.webp">
+                            <img src="assets/program-section/python-for-kids.png">
                         </div>
-                        <div class="card-body">
-                            <div class="card-title d-flex align-items-center justify-content-center">
-                                <h4>
-                                    Python for Kids
-                                </h4>
-                            </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Python for Kids
+                            </h4>
+                        </div>
+                        <div class="card-body py-0 px-1">
                             <div class="descriptions m-2">
                                 <p>
                                     Yuk, ajak si kecil menjelajahi dunia pemrograman dengan cara yang menyenangkan!
@@ -905,40 +968,33 @@
                                     *16x pertemuan (2 bulan)
                                 </p>
                             </div>
-                            <!-- <div class="list-desc card-text text-start">
-                                <ul>
-                                    <li>Membuat Game Sederhana</li>
-                                    <li>Menggambar dengan Kode</li>
-                                    <li>Memecahkan Teka-teki Logika</li>
-                                    <li>Mengenal Konsep Dasar Pemrograman</li>
-                                </ul>
-                            </div> -->
                             <div class="content-price">
                                 <!-- <h6>70% OFF</h6> -->
                                 <s><em>Rp 1.599.000</em></s>
                                 <h5>Rp 479.000</h5>
                             </div>
-                            <hr>
+                        </div>
+                        <div class="card-footer">
                             <div class="d-flex mx-2">
                                 <a href="#" class="custom-button d-lg-block mx-auto">
                                     Lebih Lanjut
                                 </a>
                             </div>
-                        </div>                
+                        </div>
                     </div>
                 </div>
 
-                <div class="col col-lg-3 col-sm-6 my-2">
+                <div class="col-12 col-lg-3 col-md-6 my-2">
                     <div class="card h-100" data-aos="zoom-in">
                         <div class="image-wrapper">
-                            <img src="assets/program-section/basic-web-development.webp">
+                            <img src="assets/program-section/web-development.png">
                         </div>
-                        <div class="card-body">
-                            <div class="card-title d-flex align-items-center justify-content-center">
-                                <h4>
-                                    Basic Web Development
-                                </h4>
-                            </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Basic Web Development
+                            </h4>
+                        </div>
+                        <div class="card-body py-0 px-1">
                             <div class="descriptions m-2">
                                 <p>
                                     Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
@@ -947,40 +1003,33 @@
                                     *16x pertemuan (2 bulan)
                                 </p>
                             </div>
-                            <!-- <div class="list-desc card-text text-start">
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>Membangun website sederhana</li>
-                                </ul>
-                            </div> -->
                             <div class="content-price">
                                 <!-- <h6>70% OFF</h6> -->
                                 <s><em>Rp 3.199.000</em></s>
                                 <h5>Rp 959.000</h5>
                             </div>
-                            <hr>
+                        </div>
+                        <div class="card-footer">
                             <div class="d-flex mx-2">
                                 <a href="#" class="custom-button d-lg-block mx-auto">
                                     Lebih Lanjut
                                 </a>
                             </div>
-                        </div>                
+                        </div>
                     </div>
                 </div>
 
-                <div class="col col-lg-3 col-sm-6 my-2">
+                <div class="col-12 col-lg-3 col-md-6 my-2">
                     <div class="card h-100" data-aos="zoom-in">
                         <div class="image-wrapper">
-                            <img src="assets/program-section/data-science.webp">
+                            <img src="assets/program-section/data-science.png">
                         </div>
-                        <div class="card-body">
-                            <div class="card-title d-flex align-items-center justify-content-center">
-                                <h4>
-                                    Data Science
-                                </h4>
-                            </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Data Science
+                            </h4>
+                        </div>
+                        <div class="card-body py-0 px-1">
                             <div class="descriptions m-2">
                                 <p>
                                     Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
@@ -989,33 +1038,169 @@
                                     *16x pertemuan (2 bulan)
                                 </p>
                             </div>
-                            <!-- <div class="list-desc card-text text-start">
-                                <ul>
-                                    <li>Pemrograman Python untuk Data Science</li>
-                                    <li>Visualisasi Data</li>
-                                    <li>Machine Learning</li>
-                                    <li>Studi Kasus dan Project</li>
-                                </ul>
-                            </div> -->
                             <div class="content-price">
                                 <!-- <h6>70% OFF</h6> -->
                                 <s><em>Rp 4.999.000</em></s>
                                 <h5>Rp 1.499.000</h5>
                             </div>
-                            <hr>
+                        </div>
+                        <div class="card-footer">
                             <div class="d-flex mx-2">
                                 <a href="#" class="custom-button d-lg-block mx-auto">
                                     Lebih Lanjut
                                 </a>
                             </div>
-                        </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row responsive-text text-center">
+                <div class="col-12 col-lg-3 col-md-6 my-2">
+                    <div class="card h-100" data-aos="zoom-in">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/basic-python.webp">
+                        </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Python Fundamental
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="descriptions m-2">
+                                <p>
+                                    Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="content-price">
+                                <!-- <h6>70% OFF</h6> -->
+                                <s><em>Rp 2.999.000</em></s>
+                                <h5>Rp 1.000.000</h5>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex mx-2">
+                                <a href="basic-fundamental.html" class="custom-button d-lg-block mx-auto">
+                                    Lebih Lanjut
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 my-2">
+                    <div class="card h-100" data-aos="zoom-in">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/python-for-kid.webp">
+                        </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Python for Kids
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="descriptions m-2">
+                                <p>
+                                    Yuk, ajak si kecil menjelajahi dunia pemrograman dengan cara yang menyenangkan!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="content-price">
+                                <!-- <h6>70% OFF</h6> -->
+                                <s><em>Rp 1.599.000</em></s>
+                                <h5>Rp 479.000</h5>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex mx-2">
+                                <a href="#" class="custom-button d-lg-block mx-auto">
+                                    Lebih Lanjut
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 my-2">
+                    <div class="card h-100" data-aos="zoom-in">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/basic-web-development.webp">
+                        </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Basic Web Development
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="descriptions m-2">
+                                <p>
+                                    Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="content-price">
+                                <!-- <h6>70% OFF</h6> -->
+                                <s><em>Rp 3.199.000</em></s>
+                                <h5>Rp 959.000</h5>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex mx-2">
+                                <a href="#" class="custom-button d-lg-block mx-auto">
+                                    Lebih Lanjut
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-6 my-2">
+                    <div class="card h-100" data-aos="zoom-in">
+                        <div class="image-wrapper">
+                            <img src="assets/program-section/data-science.webp">
+                        </div>
+                        <div class="card-title d-flex align-items-center justify-content-center m-0">
+                            <h4 class="m-0">
+                                Data Science
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="descriptions m-2">
+                                <p>
+                                    Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
+                                </p>
+                                <p style="font-size: 12px;">
+                                    *16x pertemuan (2 bulan)
+                                </p>
+                            </div>
+                            <div class="content-price">
+                                <!-- <h6>70% OFF</h6> -->
+                                <s><em>Rp 4.999.000</em></s>
+                                <h5>Rp 1.499.000</h5>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex mx-2">
+                                <a href="#" class="custom-button d-lg-block mx-auto">
+                                    Lebih Lanjut
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimoni-section">
+    <section class="testimoni-section" id="testimoni-section">
         <div class="container">
             <div class="title responsive-text text-center" data-aos="zoom-in">
                 <h2>
@@ -1028,100 +1213,103 @@
             </div>
 
             <div class="row responsive-text m-3">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\benedicta.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/benedicta.jpg">
+                            <h6 class="d-flex align-items-end">Benedicta Wahyu</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Benedicta Wahyu</h5>
-                            <p>
+                            <p class="fw-bold">
                                 Binus University
                             </p>
                             <p>
                                 Bachelor Degree Accounting and Finance
                             </p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\putu.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/putu-narendra.jpg">
+                            <h6 class="d-flex align-items-end">Putu Narendra</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Putu Narendra</h5>
-                            <p>
+                            <p class="fw-bold">
                                 Binus University
                             </p>
                             <p>Finance</p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\jackson.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/jackson.jpg">
+                            <h6 class="d-flex align-items-end">Jackson</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Jackson</h5>
-                            <p>
+                            <p class="fw-bold">
                                 Oil and Gas in Qatar
                             </p>
                             <p>
                                 Professional
                             </p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row responsive-text m-3">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\Wandi.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/wandi.jpg">
+                            <h6 class="d-flex align-items-end">Wandi</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Wandi</h5>
-                            <p>
-                                Master in Data Science and Business administation
+                            <p class="fw-bold">
+                                Master in Data Science and Business Administation
                             </p>
                             <p>
                                 Copenhagen Business School
                             </p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\Kayla.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/kayla.jpg">
+                            <h6 class="d-flex align-items-end">Kayla</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Kayla</h5>
-                            <p>
+                            <p class="fw-bold">
                                 University of California
                             </p>
                             <p>
                                 Bachelor of Data Science
                             </p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6 p-0 p-sm-2">
                     <div class="card video-card" data-video="assets\testimoni-section\Evita.mp4">
-                        <div class="image-wrapper">
+                        <div class="image-wrapper gap-3">
                             <img src="assets/testimoni-section/evita.jpg">
+                            <h6 class="d-flex align-items-end">Evita</h6>
                         </div>
                         <div class="card-body">
-                            <h5>Evita</h5>
-                            <p>
+                            <p class="fw-bold">
                                 Universty of Lincoln
                             </p>
                             <p>
                                 Master in Data Science and Applied Analytics
                             </p>
+                            <img src="assets/testimoni-section/click-video.svg">
                         </div>
                     </div>
                 </div>
@@ -1145,7 +1333,7 @@
         <div class="container">
             <div class="title responsive-text text-center mb-5 mt-3" data-aos="zoom-in">
                 <h2>
-                    FAQ - Kursus Pemrograman Pasar Algoritma
+                    FAQ - Kursus Pemrograman di Pasar Algoritma
                 </h2>
             </div>
             

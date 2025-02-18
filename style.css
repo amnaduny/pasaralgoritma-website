@@ -133,14 +133,13 @@ body {
     left: 0;
     z-index: 100;
     transition: background-color 0.3s ease;
-    padding-top: 3rem;
-    max-width: 100vw;
+    padding-top: 2rem;
 }
 
 .navbar-section.scrolled {
-    background-color: white;
-    padding-top: 0;
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+    /* background-color: white; */
+    padding-top: 2rem;
+    /* box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .navbar-section .container {
@@ -152,12 +151,18 @@ body {
 }
 
 .navbar-section.scrolled .container {
-    border: 2px solid #f2f2f2;
+    background-color: var(--background);
+    transition: background-color 0.3s ease;
     border-radius: 5rem;
     padding-left: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
 }
+
+/* .navbar-section .container .text-logo {
+    color: var(--text-white);
+} */
 
 .navbar-section .navbar .navbar-brand {
     background-color: var(--background);
@@ -169,6 +174,12 @@ body {
     height: 64px;
     border: var(--border);
     border-radius: 50%;
+    transition: border 0.3s ease;
+}
+
+.navbar-section .navbar .navbar-brand.scrolled img {
+    border: 1px solid var(--secondary);
+    transition: border 0.3s ease;
 }
 
 .navbar-section .navbar li {
@@ -214,26 +225,9 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero-section .hero-image {
-    border-radius: 2%;
-}
-
 .hero-section .btn.btn-primary {
     background-color: transparent;
     border-width: 2px;
-}
-
-.hero-section .image-container {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    /* border: 1px solid #f2f2f2; */
-    border-radius: 0.5rem;
-
-    /* background-image: url(assets/navbar/logo-pasaralgoritma.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 .hero-section .hero-content h1 {
@@ -259,6 +253,10 @@ body {
     color: var(--text-white);
     /* background-color: transparent; */
     /* border: 2px solid var(--primary); */
+}
+
+.hero-section .hero-image-wrapper {
+    width: 60%;
 }
 
 .hero-section .carousel-container {
@@ -461,26 +459,35 @@ body {
 
 .mentor-section .carousel-item,
 .mentor-section .carousel-item.active {
-    height: 600px;
+    /* height: 600px; */
     padding: 2rem 10rem;
+}
+
+/* .mentor-section .carousel .card-group { */
+    /* margin: 1rem 4rem; */
+/* } */
+
+.mentor-section .carousel .card-img-top {
+    border: none;
+    border-radius: 0;
 }
 
 .mentor-section .carousel-item .card {
     border: none;
-    border-radius: 0;
-    height: 450px;
+    /* border-radius: 0; */
+    /* height: 450px; */
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
-.mentor-section .image-wrapper {
-    height: 15vw;
+.mentor-section .carousel-item .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.mentor-section .image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-    /* padding: 0.25rem; */
-    /* border: solid 1px black; */
+.mentor-section .carousel-item .card-footer img {
+    width: 24px;
+    height: auto;
 }
 
 .mentor-section .carousel-item .highlight {
@@ -510,11 +517,18 @@ body {
     height: 24px;
 }
 
+.mentor-section .carousel-control-prev-icon {
+    background-image: url(assets/icons/arrow-left.svg);
+}
+
+.mentor-section .carousel-control-next-icon {
+    background-image: url(assets/icons/arrow-right.svg);
+}
+
 .mentor-section .carousel-control-prev-icon,
 .mentor-section .carousel-control-next-icon {
-    background-color: var(--secondary);
-    padding: 1rem;
-    border-radius: 1rem;
+    background-color: transparent;
+    align-items: end;
 }
 
 /* Program Section */
@@ -529,21 +543,12 @@ body {
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* 
-.program-section .title h2,
-.program-section .title p {
-    color: white;
-} */
-
 .program-section .card {
     border-radius: 0.5rem;
     border: var(--border);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
-
-/* .program-section .list-desc.card-text  {
-    border: none;
-} */
 
 .program-section .image-wrapper {
     padding: 1rem;
@@ -563,6 +568,7 @@ body {
     border: 3px solid white;
     transition: padding 0.3s ease, transform 0.3s ease;
     box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.25);
+    background-color: var(--background-2);
 }
 
 .program-section .card img:hover {
@@ -614,9 +620,10 @@ body {
     margin-bottom: 1rem;
     margin-top: -3rem;
     margin-left: 1rem;
+    display: flex;
 }
 
-.testimoni-section .card img {
+.testimoni-section .card .image-wrapper img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -630,7 +637,14 @@ body {
     border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.testimoni-section .card .card-body h5,
+.testimoni-section .card .card-body img {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: 10px;
+    right: 10px;
+}
+
 .testimoni-section .card .card-body p {
     color: var(--text-white);
 }
@@ -670,7 +684,7 @@ body {
 .subscribe-section .left-column {
     padding: 2rem;
     background-color: var(--secondary);
-    border-radius: 0 0 0 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .subscribe-section .left-column h2,
@@ -696,7 +710,7 @@ body {
 }
 .subscribe-section .right-column {
     background-color: var(--background);
-    border-radius: 0 0 0.5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
     border: var(--border);
 }
 
@@ -735,15 +749,24 @@ body {
 }
 
 @media (max-width: 575.98px) {
+    html {
+        scroll-padding-top: 40px;
+    }
+
     /* Navbar Section */
     .navbar-section {
         max-width: 100vw;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .navbar-section.scrolled {
+        padding-top: 0.5rem;
     }
 
     .navbar-section .container {
         border-radius: 1rem;
         background-color: var(--background);
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
     }
 
     .navbar-section.scrolled .container {
@@ -801,6 +824,7 @@ body {
     /* Why Us Section */
     .why-us-section {
         margin: 0;
+        border-radius: 0;
     }
 
     .why-us-section .why-us-content img {
@@ -810,7 +834,76 @@ body {
     /* Tentang Kami */
     .tentang-kami-section {
         margin: 1rem 0;
+        border-radius: 0;
     }
+
+    /* Mentor Section */
+    .mentor-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .mentor-section .carousel-item,
+    .mentor-section .carousel-item.active {
+        padding: 2rem 3rem;
+    }
+
+    /* Program Section */
+    .program-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .program-section .card {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* Testimoni Section */
+    .testimoni-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .faq-section .accordion-button {
+        padding: 1rem;
+    }
+
+    /* Subscribe Section */
+    .subscribe-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .subscribe-section .left-column,
+    .subscribe-section .right-column {
+        border-radius: 0;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .cta-section .image-wrapper {
+        width: 125px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -875,17 +968,111 @@ body {
         margin-right: 0.5rem;
         margin-top: 1rem;
     }
+
+    /* Mentor Section */
+    .mentor-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .mentor-section .carousel-item,
+    .mentor-section .carousel-item.active {
+        padding: 2rem 5.5rem;
+    }
+
+    /* Program Section */
+    .program-section {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .program-section .card {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    /* Testimoni Section */
+    .testimoni-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    /* Subscribe Section */
+    .subscribe-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .subscribe-section .left-column {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .subscribe-section .right-column {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .cta-section .image-wrapper {
+        width: 150px;
+    }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navbar Section */
+    .navbar-section .container {
+        border-radius: 1rem;
+        background-color: var(--background);
+    }
+
+    .navbar-section.scrolled .container {
+        border-radius: 1rem;
+    }
+
+    .navbar-section .navbar-collapse {
+        margin-top: 1rem;
+    }
+
+    .navbar-section .navbar-nav .nav-link {
+        color: var(--text-black);
+    }
+
+    .navbar-section .navbar-nav .nav-link:hover {
+        color: var(--primary);
+    }
+
+    .navbar-section .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:focus, 
+    .navbar-toggler:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
     /* Hero Section */
     .hero-section .carousel-card-wrapper {
         width: 600%;
-        height: 350px;
+        height: 315px;
     }
 
     .hero-section .testimonial-card {
-        height: 350px;
+        height: 275px;
     }
 
     /* Why Us Section */
@@ -905,6 +1092,53 @@ body {
         margin-right: 0.5rem;
         margin-top: 1rem;
     }
+
+    /* Mentor Section */
+    .mentor-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .mentor-section .carousel-item,
+    .mentor-section .carousel-item.active {
+        padding: 2rem 6rem;
+    }
+
+    /* Program Section */
+    .program-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* Testimoni Section */
+    .testimoni-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* Subscribe Section */
+    .subscribe-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .cta-section .image-wrapper {
+        width: 150px;
+    }
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -914,11 +1148,54 @@ body {
         gap: 0.5rem;
     }
 
+    .hero-section .hero-image-wrapper {
+        width: 100%;
+    }
+
     /* Why Us Section */
     .why-us-section {
         margin-right: 2rem;
         margin-left: 2rem;
         margin-top: 8rem;
+    }
+
+    /* Mentor Section */
+    .mentor-section {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    .mentor-section .carousel-item,
+    .mentor-section .carousel-item.active {
+        padding: 2rem 6rem;
+    }
+
+    /* Testimoni Section */
+    .testimoni-section {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    /* Subscribe Section */
+    .subscribe-section {
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .cta-section .image-wrapper {
+        width: 150px;
     }
 
 }
