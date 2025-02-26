@@ -1,3 +1,24 @@
+// start of ad modal
+document.addEventListener("DOMContentLoaded", function() {
+    let modal = document.getElementById("adModal");
+    let mainContent = document.getElementById("mainContent");
+    let adImage = document.getElementById("adImage");
+    let closeModal = document.getElementById("closeModal");
+
+    function hideModal() {
+        modal.style.display = "none";
+        mainContent.style.display = "block";
+    }
+
+    // Close modal when clicking outside the image or pressing close button
+    modal.addEventListener("click", function(event) {
+        if (event.target !== adImage && !adImage.contains(event.target) || event.target === closeModal) {
+            hideModal();
+        }
+    });
+});
+// end of ad modal
+
 // start of modal company profile
 // Stop playing video youtube if modal is closed
 // get the modal and iframe

@@ -126,6 +126,14 @@ body {
     margin: 0;
 }
 
+/* Ads modal */
+/* .modal-backdrop.show {
+    opacity: 0.9;
+}
+.modal-content {
+    text-align: center;
+} */
+
 /* Navbar */
 .navbar-section {
     background-color: transparent;
