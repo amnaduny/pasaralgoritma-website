@@ -21,14 +21,12 @@
     <link rel="icon" href="assets/pasar-algoritma-logo.ico" type="icon">
 </head>
 <body>
-    <!-- Advertisement Modal -->
-    <div class="modal fade show" id="adModal" tabindex="-1" aria-hidden="true" style="display: block;">
+    <div class="advertisement modal fade show" id="adModal" tabindex="-1" aria-hidden="true" style="display: block;" role="dialog">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close position-absolute top-0 end-0 m-3" id="closeModal"></button>
-                <!-- <h5 class="modal-title mb-3">Special Offer!</h5> -->
                 <a href="https://wa.me/+6289681036829?text=Halo%20Pasar%20Algoritma!" target="_blank" id="adImage">
-                    <img src="assets/bootcamp.jpg" class="img-fluid" alt="Ad Image">
+                    <img src="assets/bootcamp.jpg" class="img-thumbnail" alt="Ad Image">
                 </a>
             </div>
         </div>
@@ -135,10 +133,11 @@
                             <div class="testimonial-card">
                                 <div class="card-title">
                                     <div class="image-wrapper">
-                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                        <img src="assets/testimoni-section/Mikha.jpeg" class="profile-img">
                                     </div>
                                     <h6>Mikha</h6>
-                                    <p class="fw-bold">Mahasiswa S1</p>
+                                    <p class="fw-bold">Sampoerna University</p>
+                                    <p class="fw-bold">Bachelor of Computer Science</p>
                                 </div>
                                 <div class="card-body mt-2">
                                     <p>
@@ -230,11 +229,11 @@
                             <div class="testimonial-card">
                                 <div class="card-title">
                                     <div class="image-wrapper">
-                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                        <img src="assets/testimoni-section/Melza.jpeg" class="profile-img">
                                     </div>
                                     <h6>Melza</h6>
                                     <p class="fw-bold">
-                                        Bachelor of
+                                        Mahasiswa S1
                                     </p>
                                 </div>
                                 <div class="card-body mt-2">
@@ -263,7 +262,7 @@
                             <div class="testimonial-card">
                                 <div class="card-title">
                                     <div class="image-wrapper">
-                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                        <img src="assets/testimoni-section/Mellisa.jpeg" class="profile-img">
                                     </div>
                                     <h6>Melisa</h6>
                                     <p class="fw-bold">Private Healthcare Company</p>
@@ -280,10 +279,11 @@
                             <div class="testimonial-card">
                                 <div class="card-title">
                                     <div class="image-wrapper">
-                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                        <img src="assets/testimoni-section/Mikha.jpeg" class="profile-img">
                                     </div>
                                     <h6>Mikha</h6>
-                                    <p class="fw-bold">Mahasiswa S1</p>
+                                    <p class="fw-bold">Sampoerna University</p>
+                                    <p class="fw-bold">Bachelor of Computer Science</p>
                                 </div>
                                 <div class="card-body mt-2">
                                     <p>
@@ -375,11 +375,11 @@
                             <div class="testimonial-card">
                                 <div class="card-title">
                                     <div class="image-wrapper">
-                                        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="profile-img">
+                                        <img src="assets/testimoni-section/Melza.jpeg" class="profile-img">
                                     </div>
                                     <h6>Melza</h6>
                                     <p class="fw-bold">
-                                        Bachelor of
+                                        Mahasiswa S1
                                     </p>
                                 </div>
                                 <div class="card-body mt-2">
@@ -451,7 +451,7 @@
                             <div class="card-body d-flex align-items-center justify-content-center text-center p-0">
                                 <p>
                                     Kurikulum menyesuaikan kebutuhan teknologi yang sedang 
-                                    berkembang.
+                                    berkembang sekarang dan di masa depan.
                                 </p>
                             </div>
                         </div>
@@ -922,294 +922,563 @@
         <div class="container">
             <div class="title responsive-text text-center p-5 mb-2" data-aos="zoom-in">
                 <h2>
-                    Program Kursus untuk Kamu!
+                    Karir Program!
                 </h2>
                 <p>
                     Pasar Algoritma menawarkan program-program unggulan.
                 </p>
             </div>
-            <div class="row responsive-text text-center">
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/python-fundamental.png">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Fundamental Coding
-                            </h4>
-                        </div>
-                        <div class="card-body py-0 px-1">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *12x pertemuan (1 bulan)
-                                </p>
+
+            <!-- Carousel Wrapper -->
+            <div id="programCarouselLG" class="carousel slide responsive-text d-none d-lg-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Three Programs -->
+                    <div class="carousel-item active">
+                        <div class="row responsive-text text-center justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="assets/program-section/python-fundamental.png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Fundamental Coding
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
+                                            </p>
+                                            <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="fundamental-coding.html" class="custom-button d-lg-block mx-auto">
+                                                Lebih Lanjut
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 2.999.000</em></s>
-                                <h5>Rp 1.000.000</h5>
+                            
+
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="assets/program-section/web-development.png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Basic Web Development
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
+                                            </p>
+                                            <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="basic-web-development.html" class="custom-button d-lg-block mx-auto">
+                                                Lebih Lanjut
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="fundamental-coding.html" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
+
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="assets/program-section/python-for-kids.png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Data Analyst & Business Analytics
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Jadilah Data Analyst Handal! Kuasai Business Analytics & tingkatkan kariermu sekarang!
+                                            </p>
+                                            <p style="font-size: 12px;">
+                                                *16x pertemuan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-price">
+                                        <s style="color: red;"><em>Rp 4.599.000</em></s>
+                                        <h5>Rp 1.600.000</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="data-analyst-business-analytics.html" class="custom-button d-lg-block mx-auto">
+                                                Lebih Lanjut
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/python-for-kids.png">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Python for Kids
-                            </h4>
-                        </div>
-                        <div class="card-body py-0 px-1">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Yuk, ajak si kecil menjelajahi dunia pemrograman dengan cara yang menyenangkan!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
+
+                    <!-- Slide 2: Three Programs -->
+                    <div class="carousel-item">
+                        <div class="row responsive-text text-center justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="assets/program-section/data-science.png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Data Science, Machine and Deep Learning
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
+                                            </p>
+                                            <p style="font-size: 12px;">
+                                                *25x pertemuan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="content-price">
+                                        <s style="color: red;"><em>Rp 5.999.000</em></s>
+                                        <h5>Rp 3.125.000</h5>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="data-science-ML-DL-TL.html" class="custom-button d-lg-block mx-auto">
+                                                Lebih Lanjut
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 1.599.000</em></s>
-                                <h5>Rp 479.000</h5>
+                            
+
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Big Data Engineering & DevOps
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Kuasai Big Data Engineering & DevOps! Belajar langsung dari ahlinya, praktik 
+                                                dengan studi kasus nyata, dan tingkatkan kariermu.
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Computer Vision
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Kuasai Computer Vision dan jadilah ahli AI! Belajar dari nol hingga mahir dengan praktik langsung.
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *16x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                            <s style="color: red;"><em>Rp 4.599.000</em></s>
+                                            <h5>Rp 1.600.000</h5>
+                                        </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
+                    </div>
+
+                    <!-- Slide 3: Three Programs -->
+                    <div class="carousel-item">
+                        <div class="row responsive-text text-center justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Full Stack Web Development
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Kuasai Full Stack Web Development dan bangun website profesional dari frontend hingga backend!
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *25x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 5.999.000</em></s>
+                                        <h5>Rp 3.125.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Supply Chain Forecasting
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Kuasai Supply Chain Forecasting dan optimalkan perencanaan bisnis dengan analisis data!
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/web-development.png">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Basic Web Development
-                            </h4>
-                        </div>
-                        <div class="card-body py-0 px-1">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
-                            </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 3.199.000</em></s>
-                                <h5>Rp 959.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="basic-web-development.html" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#programCarouselLG" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#programCarouselLG" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/data-science.png">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Data Science
-                            </h4>
-                        </div>
-                        <div class="card-body py-0 px-1">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
-                            </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 4.999.000</em></s>
-                                <h5>Rp 1.499.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="kids-section" id="kids-section">
+        <div class="container position-relative">
+            <div class="title responsive-text text-center mb-4" data-aos="zoom-in">
+                <h2>
+                    Program Coding untuk Anak
+                </h2>
+                <p>
+                    Program coding untuk anak usia 7-12 tahun. <br>
+                    Belajar coding dengan metode yang menyenangkan dan interaktif.
+                </p>
             </div>
 
-            <hr>
+            <img src="assets/kids-section/code-monitor.png" class="element-icon code-monitor">
+            <img src="assets/kids-section/console.png" class="element-icon console">
+            <img src="assets/kids-section/cpu-processor.png" class="element-icon cpu-processor">
+            <img src="assets/kids-section/robot.png" class="element-icon robot">
 
-            <div class="row responsive-text text-center">
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/basic-python.webp">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Python Fundamental
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Pelajari bahasa pemrograman paling populer dan serbaguna saat ini!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
+            <div id="kidsCarouselLG" class="carousel slide responsive-text d-none d-lg-block" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1: Three Programs -->
+                    <div class="carousel-item active">
+                        <div class="row responsive-text text-center justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            New Born Coding
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Pelajari Pengenalan Dasar Komputer dengan Logic Building dan Dasar Scratch untuk memulai coding dengan mudah!
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 2.999.000</em></s>
-                                <h5>Rp 1.000.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="fundamental-coding.html" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/python-for-kid.webp">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Python for Kids
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Yuk, ajak si kecil menjelajahi dunia pemrograman dengan cara yang menyenangkan!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
-                            </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 1.599.000</em></s>
-                                <h5>Rp 479.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/basic-web-development.webp">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Basic Web Development
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Pelajari dasar-dasar pengembangan website dan bangun kehadiran online-mu!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Game Design and Development
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                Kuasai Game Design and Development dan buat game impianmu dari nol hingga siap dimainkan!
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 3.199.000</em></s>
-                                <h5>Rp 959.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-lg-3 col-md-6 my-2">
-                    <div class="card h-100" data-aos="zoom-in">
-                        <div class="image-wrapper">
-                            <img src="assets/program-section/data-science.webp">
-                        </div>
-                        <div class="card-title d-flex align-items-center justify-content-center m-0">
-                            <h4 class="m-0">
-                                Data Science
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="descriptions m-2">
-                                <p>
-                                    Jadilah Data Scientist handal dan ubah data menjadi insight berharga!
-                                </p>
-                                <p style="font-size: 12px;">
-                                    *16x pertemuan (2 bulan)
-                                </p>
-                            </div>
-                            <div class="content-price">
-                                <!-- <h6>70% OFF</h6> -->
-                                <s><em>Rp 4.999.000</em></s>
-                                <h5>Rp 1.499.000</h5>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="d-flex mx-2">
-                                <a href="#" class="custom-button d-lg-block mx-auto">
-                                    Lebih Lanjut
-                                </a>
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Young Web Builders
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                ..................
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Slide 2: Three Programs -->
+                    <div class="carousel-item">
+                        <div class="row responsive-text text-center justify-content-center">
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Creative Digital Design
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                ..................
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Robotic Kids
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                ..................
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-lg-3 col-md-6 my-2">
+                                <div class="card h-100" data-aos="zoom-in">
+                                    <div class="image-wrapper">
+                                        <img src="https://placehold.co/500x500/png">
+                                    </div>
+                                    <div class="card-title d-flex align-items-center justify-content-center my-2">
+                                        <h5 class="m-2">
+                                            Robotic Advance
+                                        </h5>
+                                    </div>
+                                    <div class="card-body py-0 px-1 mb-3">
+                                        <div class="descriptions m-2">
+                                            <p>
+                                                ..................
+                                            </p>
+                                            <!-- <p style="font-size: 12px;">
+                                                *12x pertemuan
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <!-- <div class="content-price">
+                                        <s style="color: red;"><em>Rp 2.999.000</em></s>
+                                        <h5>Rp 1.000.000</h5>
+                                    </div> -->
+                                    <div class="card-footer">
+                                        <div class="d-flex mx-2">
+                                            <a href="#" class="custom-button d-lg-block mx-auto disabled" aria-disabled="true" tabindex="-1">
+                                                Coming Soon
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#kidsCarouselLG" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#kidsCarouselLG" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>

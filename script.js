@@ -1,22 +1,31 @@
 // start of ad modal
-document.addEventListener("DOMContentLoaded", function() {
-    let modal = document.getElementById("adModal");
+document.addEventListener("DOMContentLoaded", function () {
+    let modal = new bootstrap.Modal(document.getElementById("adModal"));
     let mainContent = document.getElementById("mainContent");
     let adImage = document.getElementById("adImage");
     let closeModal = document.getElementById("closeModal");
 
+    // Show modal properly (Bootstrap handles the backdrop)
+    modal.show();
+
     function hideModal() {
-        modal.style.display = "none";
+        modal.hide(); // Use Bootstrap's modal hide method
         mainContent.style.display = "block";
     }
 
-    // Close modal when clicking outside the image or pressing close button
-    modal.addEventListener("click", function(event) {
+    // Close modal when clicking outside the image or pressing the close button
+    document.getElementById("adModal").addEventListener("click", function (event) {
         if (event.target !== adImage && !adImage.contains(event.target) || event.target === closeModal) {
             hideModal();
         }
     });
+
+    // Ensure backdrop is removed when modal is hidden
+    document.getElementById("adModal").addEventListener("hidden.bs.modal", function () {
+        document.querySelectorAll(".modal-backdrop").forEach(backdrop => backdrop.remove());
+    });
 });
+
 // end of ad modal
 
 // start of modal company profile
