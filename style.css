@@ -580,7 +580,27 @@ body {
     border: 3px solid white;
     transition: padding 0.3s ease, transform 0.3s ease;
     box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.25);
-    background-color: var(--background-2);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.program-section .card img#fundamental-coding,
+.program-section .card img#data-science-machine-learning-deep-learning,
+.program-section .card img#supply-chain-forecasting {
+    background-color: #EAEAEA;
+}
+
+.program-section .card img#basic-web-development,
+.program-section .card img#computer-vision,
+.program-section .card img#big-data-engineering-devops {
+    background-color: #D0E4FF;
+}
+
+.program-section .card img#data-analyst-and-business-analytics,
+.program-section .card img#full-stack-web-development {
+    background-color: #F5F5DC;
 }
 
 .program-section .card img:hover {
@@ -616,12 +636,12 @@ body {
 
 /* Kids Section */
 .kids-section {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    /* margin-right: 2rem;
+    margin-left: 2rem; */
     margin-top: 2rem;
     /* background-color: var(--tertiary); */
     background-image: linear-gradient(0deg, #FFD166  25%, #ffff 100%);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     border: none;
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
     padding-top: 3rem;
@@ -685,7 +705,24 @@ body {
     border: 3px solid white;
     transition: padding 0.3s ease, transform 0.3s ease;
     box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.25);
-    background-color: var(--background-2);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.kids-section .card img#newborn-coding,
+.kids-section .card img#young-web-builders {
+    background-color: #D0E4FF;
+}
+.kids-section .card img#python-for-kids,
+.kids-section .card img#robotic-kids {
+    background-color: #EAEAEA;
+}
+
+.kids-section .card img#game-design-development,
+.kids-section .card img#robotic-advance {
+    background-color: #F5F5DC;
 }
 
 .kids-section .card img:hover {

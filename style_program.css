@@ -309,6 +309,33 @@ body {
     padding: 1rem;
 }
 
+/* Mentor List Section */
+.list-mentor-section img {
+    width: 80%;
+}
+
+.list-mentor-section .sticky-img {
+    position: relative;
+    top: 50px;
+}
+
+.list-mentor-section .sticky-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-mentor-section .image-wrapper {
+    position: sticky;
+    top: 50px;
+    z-index: 0;
+    background: white;
+    padding-bottom: 1rem;
+}
+
+.list-mentor-section .content {
+    padding-top: 2rem;
+}
+
 
 @media (max-width: 575.98px) {
     .course-section {
