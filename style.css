@@ -802,7 +802,7 @@ body {
 }
 
 .testimoni-section input:checked + label {
-    width: 650px;
+    width: 50%;
 }
 
 .testimoni-section input:checked + label:hover {
