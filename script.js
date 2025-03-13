@@ -167,3 +167,30 @@ document.getElementById("videoModal").addEventListener("hidden.bs.modal", functi
 //     this.submit(); // Submit the form if all validations pass
 // });
 // End of validate data input form
+
+// Start of Testimoni Clicked
+document.querySelectorAll('label[for^="c"]').forEach(label => {
+    label.addEventListener('click', function() {
+        let checkboxId = this.getAttribute('for'); // Get the associated checkbox ID
+        let checkbox = document.getElementById(checkboxId);
+
+        if (checkbox.checked) {
+            let videoUrls = {
+                'c1': 'assets/testimoni-section/jackson-web.mp4',
+                'c2': 'assets/testimoni-section/evita-web.mp4',
+                'c3': 'assets/testimoni-section/benedicta-web.mp4',
+                'c4': 'assets/testimoni-section/kayla-web.mp4',
+                'c5': 'assets/testimoni-section/putu-web.mp4',
+                'c6': 'assets/testimoni-section/wandi-web.mp4'
+            };
+
+            let videoUrl = videoUrls[checkboxId]; // Get the corresponding video URL
+            document.getElementById('videoFrame').src = videoUrl;
+
+            let modal = new bootstrap.Modal(document.getElementById('videoModal'));
+            modal.show();
+        }
+    });
+});
+
+// End of Testimoni Clicked
