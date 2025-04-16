@@ -389,38 +389,6 @@ body {
     max-width: 40%;
 }
 
-/* Founder Section */
-.founder-section {
-    border: var(--border);
-    border-radius: 1rem;
-    background-color: var(--secondary);
-    margin: 1rem;
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
-}
-
-.founder-section .container {
-    padding-bottom: 3rem;
-}
-
-.founder-section .image-wrapper img {
-    border-radius: 50%;
-    padding: 0.25rem;
-    border: 2px solid white;
-}
-
-.founder-section .company-position h4 {
-    color: var(--primary);
-}
-
-.founder-section .company-position h5 {
-    color: #f2f2f2;
-}
-
-.founder-section .words h6,
-.founder-section .words p {
-    color: var(--text-white);
-}
-
 /* Tentang Kami */
 .tentang-kami-section {
     margin-top: 2rem;
@@ -469,46 +437,11 @@ body {
     padding-bottom: 5rem;
 }
 
-.mentor-section .scrollable-wrapper {
-    /* margin-right: 2rem;
-    margin-left: 2rem; */
-    margin-top: 2rem;
-    /* background-color: var(--tertiary); */
-    /* background-image: linear-gradient(0deg, #FFD166  25%, #ffff 100%); */
-    /* border-radius: 0.5rem; */
-    border: none;
-    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-.mentor-section .scrollable-wrapper.odd{
-    background-image: linear-gradient(0deg, #FFD166  25%, #ffff 100%);
-}
-
-.mentor-section .scrollable-wrapper.even{
-    background-image: linear-gradient(0deg, #bfbff7 25%, #ffff 100% );
-}
-
-.mentor-section .scrollable-wrapper .scrollable-text {
-    max-height: 50VH;
-    /* max-width: 50vh; */
-    overflow-y: auto;
-    padding-right: 1rem;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-  }
-  
-
 .mentor-section .carousel-item,
 .mentor-section .carousel-item.active {
     /* height: 600px; */
     padding: 2rem 10rem;
 }
-
-/* .mentor-section .carousel .card-group { */
-    /* margin: 1rem 4rem; */
-/* } */
 
 .mentor-section .carousel .card-img-top {
     border: none;
