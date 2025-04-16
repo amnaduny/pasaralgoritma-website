@@ -153,6 +153,11 @@ body {
     padding-bottom: 3rem;
 }
 
+.list-mentor-section .scrollable-wrapper img {
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+}
+
 .list-mentor-section .scrollable-wrapper .scrollable-text {
     max-height: 400px;
     margin: 0 1rem;
@@ -161,4 +166,5 @@ body {
     scrollbar-width: thin;
     scrollbar-color: rgba(0,0,0,0.3) transparent;
     -ms-overflow-style: auto;
+    padding: 0.5rem;
 }
